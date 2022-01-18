@@ -1,0 +1,67 @@
+$header-font: 'Alfa Slab One';
+$footer-font: 'Merriweather';	
+$footer-backgroundcolor: rgb(99, 84, 95);	
+$footer-hover: #d6c6b4;	
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #d6c6b4;
+        &__img {
+            max-width: 150px;
+            height: auto;
+            margin-left: 100px;
+        }
+        &__position {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;        
+            margin: auto 100px auto auto;
+        }
+        &__link {
+            margin-left: 70px;
+            color: black;
+            font-size: 22px;
+            font-weight: 600;
+            font-family:'Merriweather';
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+
+@media only screen and (max-width: 950px) {
+
+    .navbar {
+        &__img {
+            max-width: 120px;
+            margin-left: 20px;
+        }
+        &__position {    
+            margin: auto 20px auto auto;
+        }
+        &__link {
+            margin-left: 30px;
+        }
+    }   
+}
+
+@media only screen and (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        &__img {
+            height: auto;
+            margin:auto;
+        }
+        &__position {       
+            margin:auto;
+            padding: 10px 0;
+
+        }
+        &__link {
+            margin: 0 10px;
+            font-size: 18px;
+        }
+    }   
+}
