@@ -80,13 +80,13 @@ $footer-hover: #d6c6b4;
     &-maps {
         position: relative;
     overflow: hidden;
-    padding-top: 26.25%;
+    padding-top: 22.25%;
 
         iframe {
             position: absolute;
             top: 0;
-            left: 15%;
-            width: 70%;
+            left: 30%;
+            width: 40%;
             height: 100%;
             border: none;
             border-radius: 10px;  
@@ -111,9 +111,25 @@ $footer-hover: #d6c6b4;
             color: white;
         }
         }
-        }
+    }
+    }
+        
+        .home-maps {
+        position: relative;
+        overflow: hidden;
+        padding-top: 25.25%;
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 30%;
+                width: 40%;
+                height: 100%;
+                border: none;
+                border-radius: 10px;  
+        }   
     }
       }
+    
       @media only screen and (max-width: 1150px) {
 
             .home-info {
@@ -121,6 +137,7 @@ $footer-hover: #d6c6b4;
             flex-direction: column;
             margin: auto;
             align-items: center;
+            padding: 10px 0 30px;
             }
         .home-info-container {
             width: 100%;
@@ -130,16 +147,32 @@ $footer-hover: #d6c6b4;
             h3 {
                 padding: 10px 0;
             }
-        }
+           
+            .home-maps {
+                position: relative;
+            overflow: hidden;
+            padding-top: 30.25%;
+        
+                iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 15%;
+                    width: 70%;
+                    height: 100%;
+                    border: none;
+                    border-radius: 10px;  
+            }   
+        } 
+    } 
 
         @media only screen and (max-width: 850px) {
 
             .home-title1 {
-                font-size: 35px;
+                font-size: 32px;
                 
             }
             .home-title2 {
-                font-size: 25px;
+                font-size: 22px;
                
             } 
             .home-info {
@@ -157,7 +190,23 @@ $footer-hover: #d6c6b4;
             h3 {
                 padding: 10px 0;
             }
+            .home-maps {
+                position: relative;
+            overflow: hidden;
+            padding-top: 40.25%;
+        
+                iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 10%;
+                    width: 80%;
+                    height: 100%;
+                    border: none;
+                    border-radius: 10px;  
+            }   
         }
+}
+        
 
 
         @media only screen and (max-width: 420px) {
@@ -187,7 +236,23 @@ $footer-hover: #d6c6b4;
             h3 {
                 padding: 10px 0;
             }
+
+            .home-maps {
+                position: relative;
+            overflow: hidden;
+            padding-top: 50.25%;
+        
+                iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 5%;
+                    width: 90%;
+                    height: 100%;
+                    border: none;
+                    border-radius: 10px;  
+            }   
         }
+}
     
 
         
