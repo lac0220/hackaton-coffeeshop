@@ -1,0 +1,143 @@
+$header-font: 'Alfa Slab One';
+$footer-font: 'Merriweather';	
+$footer-backgroundcolor: rgb(99, 84, 95);	
+$footer-hover: #d6c6b4;	
+
+.coffee {
+    background-color: #e6e0d4;
+    margin: auto;
+    padding-bottom: 20px;
+
+    &__head {
+        width: 60%;
+        margin: auto;
+        h1 {
+            font-family: $header-font;
+            font-weight: lighter;
+            letter-spacing: 2px; 
+            padding-top: 30px;
+        }
+        p {
+            text-align: justify;
+            padding-bottom: 20px;
+        }
+        a {
+            color: black;
+            font-weight: bold;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+
+    &__box {
+        width: 65%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__item {
+        width: 45%;
+        padding: 25px; 
+        margin: 0 auto;
+    }
+
+    &__item > p:nth-child(1) {
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 2px solid black;
+    }
+
+    &__img {
+        width: 100%;
+        margin: auto 0;
+    }
+
+    &__text {
+        p:nth-child(1) {
+            padding: 10px 0;
+            text-align: justify;
+            font-weight: bold;
+        }
+        p:nth-child(2) {
+            text-align: justify;
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+
+.coffee__box {
+    width: 65%;
+}
+
+.coffee__item {
+    width: 70%;
+    padding: 25px; 
+    margin: 0 auto;
+}
+}
+
+@media only screen and (max-width: 1000px) {
+ 
+.coffee__box {
+    width: 75%;
+}
+
+.coffee__item {
+    width: 80%;
+}
+} 
+
+@media only screen and (max-width: 740px) {
+
+.coffee__head {
+    width: 90%;
+}
+a {
+    &:active {
+        color: white;
+    }
+}
+
+.coffee__box {
+    width: 100%;
+}
+
+.coffee__item {
+    width: 90%;
+    & p:nth-child(1) {
+        font-size: 20px;
+    }
+}
+}
+
+@media only screen and (max-width: 500px) {
+
+.coffee__head {
+    h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 18px;
+        text-align: left;
+    }
+}
+
+.coffee__box {
+    width: 100%;
+}
+
+.coffee__item {
+    width: 100%;
+}
+
+.coffee__text {
+    p:nth-child(2) {
+        text-align: left;
+    }
+}
+}

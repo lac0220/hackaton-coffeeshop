@@ -17,7 +17,8 @@
 <body>
     <header>
         <nav class="navbar">
-                <img alt="logo" src="./img/logo.svg" class="navbar__img" />
+            <a href="index.html"><img alt="logo" src="./img/logo.svg" class="navbar__img" /></a>
+            
             <ul class="navbar__position">
                 <li><a href="index.html" class="navbar__link">Home</a></li>
                 <li><a href="menu.html" class="navbar__link">Menu</Menu></a></li>
@@ -28,31 +29,33 @@
     </header>
 
     <section class="ourstory">
-        <div class="ourstoryhead">
+        <div class="ourstory__head">
             <h1>OUR STORY</h1>
             <p>GHC started as a project of two friends and passionate baristas, <strong>John & Don in 2010</strong>. 
             Believing as much in the hand of an educated barista as in the innovative equipment of the our ever-growing industry, GHC offers a full spectrum of brewing opportunities – from pour overs to syphon pots to finely executed espresso beverages. Each cup of coffee is made with love, precision and care. </p>
         </div>
-        <img alt="Generic Hipster Coffee" src="./img/espresso-machine-detail.jpg" class="ourstory_img" />
-        <div class="contact">
+
+        <img alt="Generic Hipster Coffee" src="./img/espresso-machine-detail.jpg" class="ourstory__img" />
+
+        <div class="ourstory__contact">
             <h1>Contact us</h1>
             <form action="action_page.php" method="POST">
-                <div class="container__contact inputGroup1">
+                <div class="input1">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" required>
                 </div>
 
-                <div class="container__contact inputGroup2">
+                <div class="input2">
                     <label for="email">Email address</label>
                     <input type="text" id="email" name="email" required>
                 </div>
 
-                <div class="container__contact inputGroup6">
+                <div class="input3">
                     <label for="message">Message</label>
                     <textarea id="comment" name="comment" required></textarea>
                 </div>
 
-                <div class="container__contact inputGroup7">
+                <div class="input4">
                     <input type="submit" value="SEND">
                 </div>
             </form>
@@ -60,15 +63,18 @@
     </section>
 
     <footer>
-        <ul class="footer">
-            <li><a href="index.html" class="footer__link__home">Home</a></li>
-            <li><a href="menu.html" class="footer__link">Menu</Menu></a></li>
-            <li><a href="coffee.html" class="footer__link">Coffee</a></liű>
-            <li><a href="ourstory.html" class="footer__link">Our Story</a></li>
+        <ul class="footer__menu">
+            <li><a href="index.html" class="footer__menu__link__home">Home</a></li>
+            <li><a href="menu.html" class="footer__menu__link">Menu</Menu></a></li>
+            <li><a href="coffee.html" class="footer__menu__link">Coffee</a></li>
+            <li><a href="ourstory.html" class="footer__menu__link">Our Story</a></li>
         </ul>
 
-        <p class="footer__hastag"> #HIPSTERSMAKECOFFEE</p>
-        <p class="footer__text">Follow us on <a href="https://twitter.com/" target="_blank">Twitter</a> and <a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+        <div class="footer__socialmedia">
+            <p> #HIPSTERSMAKECOFFEE</p>
+            <p>Follow us on <a href="https://twitter.com/" target="_blank">Twitter</a> and <a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+            <p>Copyright &copy; Laszlo Nemeth 2021</p>
+        </div>
     </footer>
 
 
