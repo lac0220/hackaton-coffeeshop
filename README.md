@@ -4,7 +4,7 @@ Bootcamp hackathon project - HTML, CSS & SASS
 
 1. index.html
 
-- basis details of a coffee shop including google map
+- basic details of a coffee shop including google map
 
 2. menu.html
 
