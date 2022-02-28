@@ -1,10 +1,13 @@
 $header-font: 'Alfa Slab One';
 $footer-font: 'Merriweather';	
-$footer-backgroundcolor: rgb(99, 84, 95);
-$footer-hover: #d6c6b4;
+$footer-backgroundcolor: rgb(99, 84, 95);	
+$footer-hover: #d6c6b4;	
+$page-backgroundcolor:#e6e0d4;	
+$hover-link:#4a2c2a;
+$input-color:#b18f6a;
 
 .ourstory {
-    background-color: #e6e0d4;
+    background-color: $page-backgroundcolor;
     margin: auto;
     padding-bottom: 40px;
 
@@ -25,7 +28,6 @@ $footer-hover: #d6c6b4;
 
     &__img { 
         width: 100%;
-        padding-bottom: 30px;
     }
 
     &__contact {
@@ -34,24 +36,24 @@ $footer-hover: #d6c6b4;
         margin: auto;
         font-size: 22px;
         text-align: center; 
-        background-color: #b18f6a;
         font-family: $footer-font;
-        color: white;
-        border-radius: 10px;
-        padding: 20px 0;
+        padding-bottom: 20px;
         h1 {
             text-align: center;
             font-weight: bold;
+            padding: 20px 0;
         }
     }
 }
 
 form {
+    background-color: $input-color;
     display: grid;
     width: 100%;
-    padding: 10px 0;
+    padding: 20px 0;
     font-weight: bold;
-    }
+    border-radius: 10px;
+    color: white;
 
     .input1 {
         grid-column: 1;
@@ -86,7 +88,7 @@ form {
         border-radius: 15px;
         font-size: 22px;
         outline:none;
-        border: 2px solid black;
+        border: 2px solid $input-color;
         margin: 6px auto 16px;
         font-family: $footer-font;
         resize: vertical;
@@ -96,7 +98,7 @@ form {
     }
       
     input[type=submit] {
-        background-color: #4a2c2a;
+        background-color: $hover-link;
         padding: 10px 20px;
         border: none;
         border-radius: 15px;
@@ -107,9 +109,14 @@ form {
         color: white;
         font-family: $footer-font;
         &:hover {
-            background-color: #d6c6b4; 
+            background-color: $footer-hover; 
         }
     }  
+
+    input[type=text]:required:focus:invalid {
+        border: 2px solid red;
+    }
+}
 
 @media only screen and (max-width: 750px) {
 
@@ -118,8 +125,7 @@ form {
     max-width: 520px;
 }
         
-form {
-        
+form {  
     .input2 {
         grid-column: 1;
         grid-row: 2;
@@ -136,14 +142,9 @@ form {
     }
         
     input[type=text], textarea {
-        font-size: 15px;
         width: 90%;   
     }
-            
-    input[type=submit] {
-        font-size: 18px;
-        }
-    }
+}
 }
 
 @media only screen and (max-width: 700px) {
@@ -181,13 +182,19 @@ form {
 form {
     font-size: 18px;
 }
+
+input[type=text], textarea {
+    font-size: 15px;
 }
 
-
-
-
-
-
-
-
+input[type=submit] {
+    font-size: 15px;
+    &:hover {
+        background-color: $hover-link; 
+        &:active {
+           background-color: $footer-hover; 
+        }
+    }
+}
+}
 

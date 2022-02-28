@@ -2,9 +2,12 @@ $header-font: 'Alfa Slab One';
 $footer-font: 'Merriweather';	
 $footer-backgroundcolor: rgb(99, 84, 95);	
 $footer-hover: #d6c6b4;	
+$page-backgroundcolor:#e6e0d4;	
+$hover-link:#4a2c2a;
+$input-color:#b18f6a;	
 
 .menu {
-    background-color: #e6e0d4;
+    background-color: $page-backgroundcolor;
     margin: auto;
     padding-bottom: 40px;
     h1 {
@@ -74,18 +77,18 @@ $footer-hover: #d6c6b4;
 .menu {
     h1 {
         font-size: 20px;
-        width: 93%; 
+        width: 90%; 
     }
                 
     &__box {
-        padding: 0 5%;
-        font-size: 16px;
+        padding: 0 7%;
+        font-size: 18px;
     }
                 
     &__item li {
         margin: auto -5px;
         h3 {
-            font-size: 16px;
+            font-size: 18px;
         }
         div:nth-child(2) {
             margin-left: 0px;
@@ -94,3 +97,9 @@ $footer-hover: #d6c6b4;
 }
 }
         
+
+
+
+
+
+

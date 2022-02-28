@@ -2,9 +2,12 @@ $header-font: 'Alfa Slab One';
 $footer-font: 'Merriweather';	
 $footer-backgroundcolor: rgb(99, 84, 95);	
 $footer-hover: #d6c6b4;	
+$page-backgroundcolor:#e6e0d4;	
+$hover-link:#4a2c2a;
+$input-color:#b18f6a;
 
 .coffee {
-    background-color: #e6e0d4;
+    background-color: $page-backgroundcolor;
     margin: auto;
     padding-bottom: 20px;
 
@@ -22,7 +25,7 @@ $footer-hover: #d6c6b4;
             padding-bottom: 20px;
         }
         a {
-            color: black;
+            color: $hover-link;
             font-weight: bold;
             &:hover {
                 color: white;
@@ -76,8 +79,7 @@ $footer-hover: #d6c6b4;
 
 .coffee__item {
     width: 70%;
-    padding: 25px; 
-    margin: 0 auto;
+    padding: 20px; 
 }
 }
 
@@ -96,10 +98,14 @@ $footer-hover: #d6c6b4;
 
 .coffee__head {
     width: 90%;
-}
-a {
-    &:active {
-        color: white;
+    p {
+        padding-bottom: 10px;
+    }
+    a:hover {
+    color:$hover-link;
+        &:active {
+            color:white;
+        }
     }
 }
 
@@ -141,3 +147,5 @@ a {
     }
 }
 }
+
+
