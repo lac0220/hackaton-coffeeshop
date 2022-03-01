@@ -95,6 +95,73 @@ footer {
     content: none;
   }
 }
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: #d6c6b4;
+  padding-left: 180px;
+}
+.navbar__logo img {
+  height: 7rem;
+  margin: auto;
+  display: block;
+}
+.navbar__position {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto 100px auto auto;
+}
+.navbar__link {
+  margin-left: 70px;
+  color: black;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Merriweather";
+}
+.navbar__link:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 1120px) {
+  .navbar {
+    padding-left: 20px;
+  }
+  .navbar__position {
+    margin: auto 20px auto auto;
+  }
+  .navbar__link {
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .navbar__logo {
+    margin: auto;
+  }
+  .navbar__logo img {
+    height: 4rem;
+    margin-top: 3px;
+  }
+  .navbar__position {
+    margin: auto;
+    padding: 0 0 10px;
+  }
+  .navbar__link {
+    margin: 0 10px;
+  }
+  .navbar__link:active {
+    color: white;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navbar__link {
+    font-size: 18px;
+  }
+}
 .menu {
   background-color: #e6e0d4;
   margin: auto;
@@ -539,6 +606,9 @@ form input[type=text]:required:focus:invalid {
 }
 
 @media only screen and (max-width: 750px) {
+  .ourstory {
+    padding-bottom: 30px;
+  }
   .ourstory__contact {
     width: calc(100% - 100px);
     max-width: 520px;
@@ -576,7 +646,8 @@ form input[type=text]:required:focus:invalid {
   }
 
   .ourstory__img {
-    min-height: 250px;
+    min-height: 180px;
+    object-fit: cover;
   }
 
   .ourstory__contact {
@@ -590,18 +661,16 @@ form input[type=text]:required:focus:invalid {
   form {
     font-size: 18px;
   }
-
-  input[type=text], textarea {
+  form input[type=text], form textarea {
     font-size: 15px;
   }
-
-  input[type=submit] {
+  form input[type=submit] {
     font-size: 15px;
   }
-  input[type=submit]:hover {
+  form input[type=submit]:hover {
     background-color: #4a2c2a;
   }
-  input[type=submit]:hover:active {
+  form input[type=submit]:hover:active {
     background-color: #d6c6b4;
   }
 }
@@ -624,73 +693,5 @@ html, body {
   font-size: 20px;
   font-family: "Open Sans";
   height: 100%;
-}
-
-.navbar {
-  display: flex;
-  flex-direction: row;
-  background-color: #d6c6b4;
-  padding-left: 180px;
-}
-.navbar__logo img {
-  height: 7rem;
-  margin: auto;
-  display: block;
-}
-.navbar__position {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: auto 100px auto auto;
-}
-.navbar__link {
-  margin-left: 70px;
-  color: black;
-  font-size: 22px;
-  font-weight: 600;
-  font-family: "Merriweather";
-}
-.navbar__link:hover {
-  color: white;
-}
-
-@media only screen and (max-width: 1120px) {
-  .navbar {
-    padding-left: 20px;
-  }
-  .navbar__position {
-    margin: auto 20px auto auto;
-  }
-  .navbar__link {
-    margin-left: 50px;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .navbar {
-    flex-direction: column;
-    padding-left: 0;
-  }
-  .navbar__logo {
-    margin: auto;
-  }
-  .navbar__logo img {
-    height: 5rem;
-    margin-top: 10px;
-  }
-  .navbar__position {
-    margin: auto;
-    padding: 5px 0 10px;
-  }
-  .navbar__link {
-    margin: 0 10px;
-  }
-  .navbar__link:active {
-    color: white;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .navbar__link {
-    font-size: 18px;
-  }
 }
 /*# sourceMappingURL=style.css.map */
