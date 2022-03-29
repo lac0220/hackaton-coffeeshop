@@ -1,0 +1,249 @@
+$header-font: 'Alfa Slab One';
+$header-mainhover:#4a2c2a;
+$page-backgroundcolor:#e6e0d4;	
+
+.home {
+    margin: auto;
+    background-color: $page-backgroundcolor;
+    padding-bottom: 40px;
+    h1:nth-child(1) {
+        padding: 30px 0 20px;
+        font-size: 2.813rem;
+        font-weight: lighter;
+        font-family: $header-font;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 2px; 
+        color: $header-mainhover;
+    }
+
+    h2:nth-child(3) {
+        padding: 15px 0 10px;
+        font-size: 1.875rem;
+        text-align: center;
+        font-weight: lighter;
+        color: $header-mainhover;
+        font-family: $header-font;
+        letter-spacing: 1px; 
+        text-decoration: underline;
+    }
+
+    &__img { 
+        max-width: 100%;
+        height: auto;
+    } 
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 20px 0 30px;
+        &__details {
+            width: 25%;
+            text-align: center;
+            h3 {
+                font-size: 1.8rem;
+                color: $header-mainhover;
+                font-family: $header-font;
+                letter-spacing: 1px; 
+                font-weight: lighter;
+            }
+
+            p:nth-child(3) {
+                a {
+                    color:$header-mainhover;
+                    font-weight: bold;
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    &__maps {
+        position: relative;
+        overflow: hidden;
+        padding-top: 22.25%;
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 30%;
+            width: 40%;
+            height: 100%;
+            border: none;
+            border-radius: 10px;  
+        }   
+    }
+}   
+
+@media only screen and (max-width: 1515px) {
+
+    .home {
+        &__box {
+            &__details {
+                width: 50%;
+            }
+        }
+                
+        &__maps {
+            padding-top: 25.25%;
+        }
+    }
+}
+    
+@media only screen and (max-width: 1150px) {
+
+    .home {
+        h1:nth-child(1) {
+            font-size: 2.2rem;
+        }
+    
+        h2:nth-child(3) {
+            font-size: 1.6rem;
+            padding: 15px 0 5px;
+        }
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            align-items: center;
+            padding: 0 0 30px;
+
+            &__details {
+                width: 100%;
+                margin: auto;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                padding: 15px 0 0;
+            }
+        }
+                
+        &__maps {
+            padding-top: 30.25%;
+            iframe {
+                left: 15%;
+                width: 70%; 
+            }   
+        } 
+    } 
+}
+
+@media only screen and (max-width: 850px) {
+
+    .home {
+        h1:nth-child(1) {
+            font-size: 1.6rem; 
+        }
+
+        h2:nth-child(3) {
+            font-size: 1.4rem; 
+            padding: 15px 10px 5px;
+        }
+
+        &__box {
+            &__details {
+                h3 {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        &__maps {
+            padding-top: 40.25%;
+            iframe {
+                left: 10%;
+                width: 80%; 
+            }   
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .home {
+        padding-bottom: 25px;
+        h1:nth-child(1) {
+            font-size: 1.3rem;   
+            padding: 20px 5px 10px;
+        }
+            
+        h2:nth-child(3) {
+            font-size: 1.12rem; 
+            padding: 5px 10px 0;
+        }
+
+        &__img { 
+            min-height:180px;
+            object-fit: cover;
+        } 
+
+        &__box {
+            padding: 0 0 20px;
+            &__details {
+                p {
+                    font-size: 1rem;  
+                }
+
+                h3 {
+                    font-size: 1.1rem;
+                    padding: 10px 0 0;
+                }
+
+                p:nth-child(3) a {
+                    &:hover {
+                        color: $header-mainhover;
+                    }
+
+                    &:active {
+                        color: white;
+                    }
+                }
+            }   
+        }
+
+        .home__maps { 
+            padding-top: 50.25%;
+            iframe {
+                left: 5%;
+                width: 90%;     
+            }   
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .home {
+        h1:nth-child(1) {
+            font-size: 1.11rem;   
+        }
+        
+        h2:nth-child(3) {
+            font-size: 1rem; 
+        }
+
+        &__box__details {
+            h3 {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

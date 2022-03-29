@@ -1,31 +1,28 @@
 $header-font: 'Alfa Slab One';
-$footer-font: 'Merriweather';	
-$footer-backgroundcolor: rgb(99, 84, 95);	
-$footer-hover: #d6c6b4;	
+$header-mainhover:#4a2c2a;
 $page-backgroundcolor:#e6e0d4;	
-$hover-link:#4a2c2a;
-$input-color:#b18f6a;
 
 .coffee {
     background-color: $page-backgroundcolor;
     margin: auto;
     padding-bottom: 20px;
-
     &__head {
         width: 60%;
         margin: auto;
         h1 {
             font-family: $header-font;
+            color: $header-mainhover;
             font-weight: lighter;
             letter-spacing: 2px; 
             padding-top: 30px;
         }
+
         p {
-            text-align: justify;
-            padding-bottom: 20px;
+            padding-bottom: 10px;
         }
+
         a {
-            color: $hover-link;
+            color: $header-mainhover;
             font-weight: bold;
             &:hover {
                 color: white;
@@ -43,15 +40,18 @@ $input-color:#b18f6a;
 
     &__item {
         width: 45%;
-        padding: 25px; 
+        padding: 20px; 
         margin: 0 auto;
     }
 
     &__item > p:nth-child(1) {
-        font-size: 25px;
-        font-weight: bold;
+        font-size: 1.335rem;
         text-transform: uppercase;
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid $header-mainhover;
+        color: $header-mainhover;
+        font-family: $header-font;
+        letter-spacing: 1px; 
+        font-weight: lighter;
     }
 
     &__img {
@@ -62,90 +62,140 @@ $input-color:#b18f6a;
     &__text {
         p:nth-child(1) {
             padding: 10px 0;
-            text-align: justify;
-            font-weight: bold;
-        }
-        p:nth-child(2) {
-            text-align: justify;
+            font-family: $header-font;
+            color: $header-mainhover;
+            font-weight: lighter;
+            letter-spacing: 1px; 
         }
     }
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1590px) {
 
-.coffee__box {
-    width: 65%;
-}
-
-.coffee__item {
-    width: 70%;
-    padding: 20px; 
-}
+    .coffee {
+        &__item {
+            width: 71%;
+            padding: 15px; 
+        }
+    }
 }
 
 @media only screen and (max-width: 1000px) {
- 
-.coffee__box {
-    width: 75%;
-}
+    
+    .coffee {
+        &__head {
+            h1 {
+                font-size: 1.563rem;
+            }
 
-.coffee__item {
-    width: 80%;
+            p {
+                padding-bottom: 5px;
+            }
+        } 
+    
+        &__item {
+            width: 97%;
+            padding: 10px; 
+        }
+    } 
 }
-} 
 
 @media only screen and (max-width: 740px) {
 
-.coffee__head {
-    width: 90%;
-    p {
-        padding-bottom: 10px;
-    }
-    a:hover {
-    color:$hover-link;
-        &:active {
-            color:white;
+    .coffee {
+        &__head {
+            width: 90%;
+        }
+
+        &__box {
+            width: 100%;
+        }
+
+        &__item {
+            width: 93%;
         }
     }
-}
-
-.coffee__box {
-    width: 100%;
-}
-
-.coffee__item {
-    width: 90%;
-    & p:nth-child(1) {
-        font-size: 20px;
-    }
-}
 }
 
 @media only screen and (max-width: 500px) {
 
-.coffee__head {
-    h1 {
-        font-size: 20px;
-    }
-    p {
-        font-size: 18px;
-        text-align: left;
+    .coffee {
+        padding-bottom: 10px;
+        &__head {
+            a:hover {
+                color:$header-mainhover;
+                &:active {
+                    color:white;
+                }
+            }
+            
+            h1 {
+                font-size: 1.25rem;
+                padding-top: 20px;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        &__box {
+            width: 100%;
+        }
+
+        &__item {
+            width: 96%;
+            & > p:nth-child(1) {
+                font-size: 1.125rem;
+            }
+        }
+
+        &__text {
+            p:nth-child(2) {
+                font-size: 1rem;
+            }
+        }
     }
 }
 
-.coffee__box {
-    width: 100%;
-}
+@media only screen and (max-width: 320px) {
 
-.coffee__item {
-    width: 100%;
-}
+    .coffee {
+        &__item {
+            width: 96%;
+            & > p:nth-child(1) {
+                font-size: 1.125rem;
+            }
+        }
 
-.coffee__text {
-    p:nth-child(2) {
-        text-align: left;
+        &__text {
+            p:nth-child(1) {
+                font-size: 1rem;
+            }
+
+            p:nth-child(2) {
+                font-size: 1rem;
+            }
+        }
     }
 }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

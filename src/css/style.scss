@@ -2,23 +2,38 @@
 @import 'navbar';
 @import 'menu';
 @import 'coffee';
-@import 'homepage';
+@import 'home';
 @import 'ourstory';
 
+$navbar-backgroundcolor: #d6c6b4;	
 $header-font: 'Alfa Slab One';
-$footer-font: 'Merriweather';	
-$footer-backgroundcolor: rgb(99, 84, 95);	
-$footer-hover: #d6c6b4;	
+$header-mainhover:#4a2c2a;
 $page-backgroundcolor:#e6e0d4;	
-$hover-link:#4a2c2a;
 $input-color:#b18f6a;
+$footer-font: 'Merriweather';	
+$footer-hover: #d6c6b4;
+$footer-backgroundcolor: #63545f;	
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-  
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 1.25rem;
+}
+
+html, body {
+    line-height: 1.5;
+    font-family: 'Open Sans';
+    height: 100vh;
+}
+
 li {
     list-style: none;
 }
@@ -27,20 +42,22 @@ a {
     text-decoration: none;
 }
 
-html, body {
-    line-height: 1.5;
-    font-size: 20px;
-    font-family: 'Open Sans';
-    height: 100%;
+@media screen and (max-width: 1000px) {
+    
+    section p {
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    html, body {
+        margin-top: 32px;
+    }
 }
 
   
     
-
-
-
-
-
 
 
 
