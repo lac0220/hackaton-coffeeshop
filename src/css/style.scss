@@ -5,6 +5,7 @@
 @import 'home';
 @import 'ourstory';
 
+$main-font: 'Open Sans';
 $navbar-backgroundcolor: #d6c6b4;	
 $header-font: 'Alfa Slab One';
 $header-mainhover:#4a2c2a;
@@ -30,7 +31,7 @@ body {
 
 html, body {
     line-height: 1.5;
-    font-family: 'Open Sans';
+    font-family: $main-font;
     height: 100vh;
 }
 
