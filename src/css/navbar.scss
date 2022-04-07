@@ -102,7 +102,7 @@ nav {
             margin: auto 25px auto auto;
             li a {
                 margin-left: 15px;
-                font-size: 1rem;
+                font-size: 0.95rem;
                 &:hover {
                     color:black;
                 }
@@ -115,13 +115,13 @@ nav {
     }       	
 }      
         
-@media only screen and (max-width: 368px) {
+@media only screen and (max-width: 356px) {
 
     nav {
         ul {
             margin: auto;
             li a {
-                margin: 0 5px 0 4px;
+                margin: 0 6px 0 6px;
             }
         }
     }       	

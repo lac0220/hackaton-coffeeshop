@@ -3,7 +3,7 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: #63545f;
-  padding: 20px 0px;
+  padding: 10px 0 15px;
 }
 footer ul {
   display: flex;
@@ -53,13 +53,13 @@ footer .footer__socialmedia p:nth-child(3) {
 @media only screen and (max-width: 1200px) {
   footer .footer__socialmedia p:nth-child(3) {
     text-align: center;
-    margin: 20px 0 0 0;
+    margin: 10px 0 0 0;
     position: static;
   }
 }
 @media only screen and (max-width: 720px) {
   footer {
-    padding: 10px 0 20px;
+    padding: 5px 0 10px;
     /* no dot before home */
   }
   footer ul a:before {
@@ -192,7 +192,7 @@ nav ul li a:hover {
   }
   nav ul li a {
     margin-left: 15px;
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
   nav ul li a:hover {
     color: black;
@@ -201,12 +201,12 @@ nav ul li a:hover {
     color: white;
   }
 }
-@media only screen and (max-width: 368px) {
+@media only screen and (max-width: 356px) {
   nav ul {
     margin: auto;
   }
   nav ul li a {
-    margin: 0 5px 0 4px;
+    margin: 0 6px 0 6px;
   }
 }
 .menu {

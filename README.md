@@ -16,7 +16,7 @@ The challenge was about to design a responsive coffee shop website that contains
 - SASS
 ## Version
 
-*1.0 - 05/04/2022* - Publishing of the website
+*1.0 - 07/04/2022* - Publishing of the website
 ## Author
 
 Laszlo Nemeth 

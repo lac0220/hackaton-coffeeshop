@@ -6,7 +6,7 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: $footer-backgroundcolor;
-    padding: 20px 0px;
+    padding: 10px 0 15px;
     ul {
         display: flex;
         flex-direction: row;
@@ -61,7 +61,7 @@ footer {
     footer .footer__socialmedia{
         p:nth-child(3) {
             text-align: center;
-            margin: 20px 0 0 0;
+            margin: 10px 0 0 0;
             position: static;
         }
     }
@@ -70,7 +70,7 @@ footer {
 @media only screen and (max-width: 720px) {
 
     footer {
-        padding: 10px 0 20px;
+        padding: 5px 0 10px;
         ul {
             a:before {
                 content: "·";
