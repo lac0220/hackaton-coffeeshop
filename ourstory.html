@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" href="/css/reset.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen" /> 
-    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alfa Slab One&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans&display=swap' rel='stylesheet'>
     <link rel="shortcut icon" href="img/favicon.jpg" type="image/png" /> <!-- favicon -->
 
     <title>Our Story</title>
@@ -41,24 +41,29 @@
         <h1>Make a Reservation</h1>
         <form action="action_page.php" method="POST">
             <div class="input1">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <label for="name">Name
+                    <input type="text" id="name" name="name" required>
+                </label>
             </div>
             <div class="input2">
-                <label for="email">Email address</label>
-                <input type="text" id="email" name="email" required>
+                <label for="email">Email address
+                    <input type="text" id="email" name="email" required>
+                </label>
             </div>
             <div class="input3">
-                <label for="guests">Number of guests</label>
-                <input type="text" id="guests" name="guests" required>
+                <label for="guests">Number of guests
+                    <input type="text" id="guests" name="guests" required>
+                </label>
             </div>
             <div class="input4">
-                <label for="date">Date</label>
-                <input type="date" id="fate" name="date" required>
+                <label for="date">Date
+                    <input type="date" id="fate" name="date" required>
+                </label>
             </div>
             <div class="input5">
-                <label for="message">Comment</label>
-                <textarea id="comment" name="comment"></textarea>
+                <label for="message">Comment
+                    <textarea id="comment" name="comment"></textarea>
+                </label>
             </div>
             <div class="input6">
                 <input type="submit" value="SEND">
