@@ -16,13 +16,20 @@ The challenge was about to design a responsive coffee shop website that contains
 - SASS
 ## Version
 
-*1.0 - 07/04/2022* - Publishing of the website
+*1.0 - 16/04/2022* - Publishing of the website
 ## Author
 
 Laszlo Nemeth 
-- [Portfolio](https://lac0220.github.io/)
-- [Github](https://github.com/lac0220)
-- [Linkedin](https://www.linkedin.com/in/nemeth0220)
-- [Codepen](https://codepen.io/lac0220/)
 
+<div id="badges">
+  <a href="https://lac0220.github.io/lac0220/">
+    <img src="https://img.shields.io/badge/Portfolio-red?style=for-the-badge&logo=logoColor=white" alt="Portfolio Badge"/>
+  </a>
+  <a href="https://www.linkedin.com/in/nemeth0220">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+  <a href="https://codepen.io/lac0220/">
+    <img src="https://img.shields.io/badge/Codepen-black?style=for-the-badge&logo=codepen&logoColor=white" alt="Codepen Badge"/>
+  </a>
+</div>
 
