@@ -12,7 +12,7 @@ The challenge was about to design a responsive coffee shop website that contains
 ## Tech Stack
 
 - HTML5
-- SASS
+- SCSS
 ## Version
 
 *1.0 - 16/04/2022* - Publishing of the website
