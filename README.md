@@ -1,4 +1,4 @@
-# Generic Hipster Coffee website - Bootcamp hackathon project
+# Generic Hipster Coffee - Hackathon project
 
 The challenge was about to design a responsive coffee shop website that contains some basic information, a menu, types of listed coffees, and a reservation form
 
@@ -12,14 +12,13 @@ The challenge was about to design a responsive coffee shop website that contains
 ## Tech Stack
 
 - HTML5
-- CSS
-- SASS
+- SCSS
 ## Version
 
 *1.0 - 16/04/2022* - Publishing of the website
 ## Author
 
-Laszlo Nemeth 
+<b>Laszlo Nemeth</b>
 
 <div id="badges">
   <a href="https://lac0220.github.io/lac0220/">
