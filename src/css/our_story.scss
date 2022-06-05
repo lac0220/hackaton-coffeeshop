@@ -1,23 +1,24 @@
 $header-font: 'Alfa Slab One';
-$header-mainhover:#4a2c2a;
-$navbar-backgroundcolor: #d6c6b4;	
-$page-backgroundcolor:#e6e0d4;	
+$header-main-hover:#4a2c2a;
+$hover-color: white;
+$navbar-background-color: #d6c6b4;	
+$page-background-color:#e6e0d4;	
 $input-color:#b18f6a;
 $footer-font: 'Merriweather';	
 
-.ourstory {
-    background-color: $page-backgroundcolor;
+.our-story {
     margin: auto;
     padding-bottom: 40px;
+    background-color: $page-background-color;
     &__head {
-        width: 60%;
         margin: auto;
+        width: 60%;
         h1 {
             padding-top: 30px;
-            font-family: $header-font;
-            color: $header-mainhover;
-            font-weight: lighter;
             letter-spacing: 2px; 
+            font-weight: lighter;
+            font-family: $header-font;
+            color: $header-main-hover;
         }
 
         p {
@@ -25,33 +26,33 @@ $footer-font: 'Merriweather';
         }
     }
 
-    &__img { 
+    img { 
         width: 100%;
     }
 
     h1:nth-child(3) {
-        text-align: center;
         padding: 20px 0;
-        color: $header-mainhover;
-        font-family: $header-font;
-        letter-spacing: 1px; 
-        font-weight: lighter;
+        text-align: center;
         text-decoration: underline;
+        letter-spacing: 1px; 
+        font-family: $header-font;
+        font-weight: lighter;
+        color: $header-main-hover;
     }
     
     form {
+        display: grid;
+        margin: auto;
+        padding: 20px 0;
         width: calc(100% - 50px);
         max-width: 720px;
-        margin: auto;
-        font-size: 1.375rem;
+        border-radius: 10px;
         text-align: center; 
+        font-weight: bold;
+        font-size: 1.375rem;
         font-family: $footer-font;
         background-color: $input-color;
-        display: grid;
-        padding: 20px 0;
-        font-weight: bold;
-        border-radius: 10px;
-        color: white;
+        color: $hover-color;
         .input1 {
             grid-column: 1;
             grid-row: 1;  
@@ -68,8 +69,8 @@ $footer-font: 'Merriweather';
             margin-bottom: -12px;
             input[type=text] {
                 width: 15%;
-                border-radius: 10%;
                 height: 50%;
+                border-radius: 10%;
             }
 
             label {
@@ -103,34 +104,35 @@ $footer-font: 'Merriweather';
             resize: none;
         }
 
-        input[type=text], textarea {
-            background-color: white;
+        input[type=text], 
+        textarea {
+            margin: 6px auto 16px;
             padding: 12px;
+            outline:none;
+            resize: vertical;
+            border: 2px solid $input-color;
             border-radius: 15px;
             font-size: 1.375rem;
-            outline:none;
-            border: 2px solid $input-color;
-            margin: 6px auto 16px;
             font-family: 'Times New Roman', Times, serif;
-            resize: vertical;
+            background-color: $hover-color;
             &:hover {
-                border: 2px solid white;
+                border: 2px solid $hover-color;
             }
         }
         
         input[type=submit] {
-            background-color: $header-mainhover;
             padding: 10px 20px;
             border: none;
             border-radius: 15px;
             cursor: pointer;
+            text-align: center;
             font-weight: bold;
             font-size: 1.25rem;
-            text-align: center;
-            color: white;
             font-family: $footer-font;
+            background-color: $header-main-hover;
+            color: $hover-color;
             &:hover {
-                background-color: $navbar-backgroundcolor; 
+                background-color: $navbar-background-color; 
             }
         }  
 
@@ -142,7 +144,7 @@ $footer-font: 'Merriweather';
 
 @media only screen and (max-width: 1000px) {
 
-    .ourstory {
+    .our-story {
         &__head {
             h1 {
                 font-size: 1.563rem;
@@ -160,7 +162,8 @@ $footer-font: 'Merriweather';
         form {
             max-width: 710px;
             font-size: 1.25rem;
-            input[type=text], textarea {
+            input[type=text],
+            textarea {
                 font-size: 1.25;
             }
         
@@ -173,12 +176,12 @@ $footer-font: 'Merriweather';
 
 @media only screen and (max-width: 700px) {
 
-    .ourstory {
+    .our-story {
         &__head {
             width: 90%;
         }
 
-        &__img { 
+        img { 
             height: 180px;
         }
 
@@ -203,7 +206,6 @@ $footer-font: 'Merriweather';
                 grid-column: 1;
                 grid-row: 4;
                 padding: 0 0 20px;
-
             }
 
             .input5 {
@@ -216,7 +218,8 @@ $footer-font: 'Merriweather';
                 grid-row: 6;
             }
         
-            input[type=text], textarea {
+            input[type=text], 
+            textarea {
                 width: 90%;   
             }
         }
@@ -225,46 +228,47 @@ $footer-font: 'Merriweather';
 
 @media only screen and (max-width: 500px) {
 
-    .ourstory {
+    .our-story {
         padding-bottom: 25px;
         &__head {
             h1 {
-                font-size: 1.25rem;
                 padding-top: 20px;
+                font-size: 1.25rem;
             }
 
             p {
-                font-size: 1rem;
                 padding-bottom: 20px;
+                font-size: 1rem;
             }
         }
 
-        &__img { 
+        img { 
             min-height: 180px;
             object-fit: cover;
         }
 
         h1:nth-child(3) {
-            font-size: 1.25rem;
-            letter-spacing: 1px; 
             padding: 15px 0 20px;
+            letter-spacing: 1px; 
+            font-size: 1.25rem;
         }
 
         form {
             width: calc(100% - 45px);
             font-size: 1.125rem;
-            input[type=text], textarea {
+            input[type=text], 
+            textarea {
                 font-size: 1.125rem;
             }
 
             input[type=submit] {
                 font-size: 0.938rem;
                 &:hover {
-                    background-color: $header-mainhover; 
+                    background-color: $header-main-hover; 
                 } 
 
                 &:active {
-                    background-color: $navbar-backgroundcolor; 
+                    background-color: $navbar-background-color; 
                 }    
             }
         }

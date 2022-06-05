@@ -8,7 +8,7 @@ The challenge was about to design a responsive coffee shop website that contains
 
 3. coffee.html
 
-4. ourstory.html
+4. our-story.html
 ## Tech Stack
 
 - HTML5

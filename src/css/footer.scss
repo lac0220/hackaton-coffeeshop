@@ -1,46 +1,45 @@
 $footer-font: 'Merriweather';	
 $footer-hover: #d6c6b4;
-$footer-backgroundcolor: #63545f;	
+$footer-background-color: #63545f;	
+$hover-color: white;
 
 footer {
     display: flex;
     flex-direction: column;
-    background-color: $footer-backgroundcolor;
     padding: 10px 0 15px;
+    background-color: $footer-background-color;
     ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
         li a {
-            color: white;
+            margin: auto 50px;
             font-size: 1.375rem;
             font-weight: bold;
-            margin: auto 50px;
-            font-family:$footer-font;
+            font-family: $footer-font;
+            color: $hover-color;
             &:hover {
                 color: $footer-hover;
             }
         }
     }
         
-    .footer__socialmedia {
+    .footer-social-media {
         display: block;
+        font-family: $footer-font;
+        color: $hover-color;
         p:nth-child(1) {
+            padding: 10px 0;
             text-align: center;
             font-size: 1.25rem;
-            color: white;
             font-weight: bold;
-            padding: 10px 0 10px;
-            font-family: $footer-font;
         }
 
         p:nth-child(2) {
-            color: white;
             text-align: center;
-            font-family: $footer-font;
             a {
-                color: #C8F000;
                 margin: 0 5px;
+                color: #C8F000;
                 &:hover {
                     color: $footer-hover;
                 }
@@ -48,55 +47,51 @@ footer {
         }
 
         p:nth-child(3) {
-            color: white;
-            font-family:$footer-font;
-            font-size: 1.125rem;
             margin: -28px 30px 0;
+            font-size: 1.125rem;
         }
     }
 }
           
 @media only screen and (max-width: 1200px) {
 
-    footer .footer__socialmedia{
-        p:nth-child(3) {
-            text-align: center;
-            margin: 10px 0 0 0;
-            position: static;
+    footer {
+        ul li a {
+            margin: auto 40px;
+        }
+
+        .footer-social-media {
+            p:nth-child(3) {
+                position: static;
+                margin: 10px 0 0 0;
+                text-align: center;
+            }
         }
     }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 650px) {
 
     footer {
         padding: 5px 0 10px;
         ul {
             a:before {
-                content: "·";
                 display: inline-block;
                 padding-right: 7px;
+                content: "·";
             }
                 
-            li a, .footer__home {
-                font-size: 1.125rem;
+            li a, 
+            .footer-home {
                 margin: auto 5px;
+                font-size: 1.125rem;
             }
         }
 
-        .footer__socialmedia {
-            p:nth-child(1) {
-                font-size: 1rem;
-            }
-
+        .footer-social-media {
+            p:nth-child(1),
             p:nth-child(2) {
                 font-size: 1rem;
-                color: white;
-                text-align: center;
-                font-family: $footer-font;
-                a {
-                    font-size: 1rem;
-                }
             }
 
             p:nth-child(3) {
@@ -105,7 +100,7 @@ footer {
         }  
 
         /* no dot before home */
-        ul .footer__home:before {
+        ul .footer-home:before {
             content: none;
         }
     }  
@@ -115,18 +110,20 @@ footer {
 
     footer {
         ul {
-            li a, .footer__home {
+            li a, 
+            .footer-home {
                 font-size: 1rem;
                 &:hover {
-                    color: white;
+                    color: $hover-color;
                 }
+
                 &:active {
                     color: $footer-hover;
                 }
             }
         }
 
-       .footer__socialmedia {
+       .footer-social-media {
             p:nth-child(2) a {
                 &:hover {
                     color: #C8F000;
@@ -142,3 +139,6 @@ footer {
 
  
  
+
+
+

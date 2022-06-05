@@ -1,15 +1,16 @@
-$navbar-backgroundcolor: #d6c6b4;	
+$hover-color: white;
+$navbar-background-color: #d6c6b4;	
 
 nav {
     display: flex;
     flex-direction: row;
-    background-color: $navbar-backgroundcolor;
     margin-right: auto;
-    .navbar__logo {
+    background-color: $navbar-background-color;
+    .navbar-logo {
         padding-left: 280px; 
         img {
-            height: 8rem;
             display: block;
+            height: 8rem;
         }
     }
 
@@ -20,12 +21,12 @@ nav {
         margin: auto 150px auto auto;
         li a {
             margin-left: 100px;
-            color: black;
             font-size: 1.375rem;
             font-weight: 600;
             font-family:'Merriweather';
+            color: black;
             &:hover {
-                color: white;
+                color: $hover-color;
             }
         }
     }
@@ -34,7 +35,7 @@ nav {
 @media only screen and (max-width: 1330px) {
 
     nav {
-        .navbar__logo {
+        .navbar-logo {
             padding-left: 100px; 
         }
 
@@ -51,7 +52,7 @@ nav {
 @media only screen and (max-width: 850px) {
 
     nav {
-        .navbar__logo {
+        .navbar-logo {
             padding-left: 50px; 
             img {
                 height: 6rem;
@@ -67,7 +68,7 @@ nav {
 @media only screen and (max-width: 650px) {
 
     nav {
-        .navbar__logo {
+        .navbar-logo {
             padding-left: 17px; 
             img {
                 height: 5rem;
@@ -90,9 +91,9 @@ nav {
         top: 0;
         left: 0;
         width: 100vw;
-        .navbar__logo {
+        .navbar-logo {
             padding: 0;
-            background-color: $navbar-backgroundcolor;
+            background-color: $navbar-background-color;
             img {
                 height: 4rem;
             }  
@@ -108,7 +109,7 @@ nav {
                 }
                 
                 &:active {
-                    color: white;
+                    color: $hover-color;
                 }
             }
         }
@@ -121,7 +122,7 @@ nav {
         ul {
             margin: auto;
             li a {
-                margin: 0 6px 0 6px;
+                margin: 0 6px;
             }
         }
     }       	

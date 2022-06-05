@@ -3,17 +3,18 @@
 @import 'menu';
 @import 'coffee';
 @import 'home';
-@import 'ourstory';
+@import 'our_story';
 
 $main-font: 'Open Sans';
-$navbar-backgroundcolor: #d6c6b4;	
+$navbar-background-color: #d6c6b4;	
 $header-font: 'Alfa Slab One';
-$header-mainhover:#4a2c2a;
-$page-backgroundcolor:#e6e0d4;	
+$header-main-hover:#4a2c2a;
+$hover-color: white;
+$page-background-color:#e6e0d4;	
 $input-color:#b18f6a;
 $footer-font: 'Merriweather';	
 $footer-hover: #d6c6b4;
-$footer-backgroundcolor: #63545f;	
+$footer-background-color: #63545f;	
 
 * {
     margin: 0;
@@ -29,10 +30,11 @@ body {
     font-size: 1.25rem;
 }
 
-html, body {
+html, 
+body {
+    height: 100vh;
     line-height: 1.5;
     font-family: $main-font;
-    height: 100vh;
 }
 
 li {
@@ -52,17 +54,8 @@ a {
 
 @media screen and (max-width: 500px) {
     
-    html, body {
+    html, 
+    body {
         margin-top: 32px;
     }
 }
-
-  
-    
-
-
-
-
-
-
-

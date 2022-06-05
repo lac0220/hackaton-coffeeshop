@@ -1,20 +1,21 @@
 $header-font: 'Alfa Slab One';
-$header-mainhover:#4a2c2a;
-$page-backgroundcolor:#e6e0d4;	
+$header-main-hover:#4a2c2a;
+$hover-color: white;
+$page-background-color:#e6e0d4;	
 
 .coffee {
-    background-color: $page-backgroundcolor;
     margin: auto;
     padding-bottom: 20px;
-    &__head {
-        width: 60%;
+    background-color: $page-background-color;
+    &-head {
         margin: auto;
+        width: 60%;
         h1 {
-            font-family: $header-font;
-            color: $header-mainhover;
+            padding-top: 30px;
             font-weight: lighter;
             letter-spacing: 2px; 
-            padding-top: 30px;
+            font-family: $header-font;
+            color: $header-main-hover;
         }
 
         p {
@@ -22,50 +23,48 @@ $page-backgroundcolor:#e6e0d4;
         }
 
         a {
-            color: $header-mainhover;
             font-weight: bold;
+            color: $header-main-hover;
             &:hover {
-                color: white;
+                color: $hover-color;
             }
         }
     }
 
-    &__box {
-        width: 65%;
-        margin: auto;
+    &-box {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-    }
-
-    &__item {
-        width: 45%;
-        padding: 20px; 
-        margin: 0 auto;
-    }
-
-    &__item > p:nth-child(1) {
-        font-size: 1.335rem;
-        text-transform: uppercase;
-        border-bottom: 2px solid $header-mainhover;
-        color: $header-mainhover;
-        font-family: $header-font;
-        letter-spacing: 1px; 
-        font-weight: lighter;
-    }
-
-    &__img {
-        width: 100%;
-        margin: auto 0;
-    }
-
-    &__text {
-        p:nth-child(1) {
-            padding: 10px 0;
-            font-family: $header-font;
-            color: $header-mainhover;
-            font-weight: lighter;
+        margin: auto;
+        width: 65%;
+        &__item > p:nth-child(1) {
+            border-bottom: 2px solid $header-main-hover;
+            text-transform: uppercase;
             letter-spacing: 1px; 
+            font-weight: lighter;
+            font-size: 1.335rem;
+            font-family: $header-font;
+            color: $header-main-hover;
+        }
+
+        &__item {
+            margin: 0 auto;
+            padding: 20px; 
+            width: 45%;
+            img {
+                margin: auto 0;
+                width: 100%;
+            }
+
+            &__text {
+                p:nth-child(1) {
+                    padding: 10px 0;
+                    letter-spacing: 1px; 
+                    font-weight: lighter;
+                    font-family: $header-font;
+                    color: $header-main-hover;
+                }
+            }
         }
     }
 }
@@ -73,9 +72,9 @@ $page-backgroundcolor:#e6e0d4;
 @media only screen and (max-width: 1590px) {
 
     .coffee {
-        &__item {
-            width: 71%;
+        &-box__item {
             padding: 15px; 
+            width: 71%;
         }
     }
 }
@@ -83,7 +82,7 @@ $page-backgroundcolor:#e6e0d4;
 @media only screen and (max-width: 1000px) {
     
     .coffee {
-        &__head {
+        &-head {
             h1 {
                 font-size: 1.563rem;
             }
@@ -93,26 +92,25 @@ $page-backgroundcolor:#e6e0d4;
             }
         } 
     
-        &__item {
-            width: 97%;
+        &-box__item {
             padding: 10px; 
+            width: 97%;
         }
     } 
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 700px) {
 
     .coffee {
-        &__head {
+        &-head {
             width: 90%;
         }
 
-        &__box {
+        &-box {
             width: 100%;
-        }
-
-        &__item {
-            width: 93%;
+            &__item {
+                width: 80%;
+            }
         }
     }
 }
@@ -121,17 +119,17 @@ $page-backgroundcolor:#e6e0d4;
 
     .coffee {
         padding-bottom: 10px;
-        &__head {
+        &-head {
             a:hover {
-                color:$header-mainhover;
+                color:$header-main-hover;
                 &:active {
-                    color:white;
+                    color:$hover-color;
                 }
             }
             
             h1 {
-                font-size: 1.25rem;
                 padding-top: 20px;
+                font-size: 1.25rem;
             }
 
             p {
@@ -139,63 +137,40 @@ $page-backgroundcolor:#e6e0d4;
             }
         }
 
-        &__box {
-            width: 100%;
-        }
-
-        &__item {
-            width: 96%;
-            & > p:nth-child(1) {
+        &-box {
+            &__item > p:nth-child(1) {
                 font-size: 1.125rem;
             }
-        }
-
-        &__text {
-            p:nth-child(2) {
-                font-size: 1rem;
+            
+            &__item {
+                width: 96%;
+                &__text {
+                    p:nth-child(2) {
+                        font-size: 1rem;
+                    }
+                }
             }
         }
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 330px) {
 
     .coffee {
-        &__item {
-            width: 96%;
-            & > p:nth-child(1) {
-                font-size: 1.125rem;
-            }
+        &-box__item > p:nth-child(1) {
+            font-size: 1rem;
         }
 
-        &__text {
-            p:nth-child(1) {
-                font-size: 1rem;
-            }
-
-            p:nth-child(2) {
-                font-size: 1rem;
+        &-box__item {
+            width: 96%;
+            &__text {
+                p:nth-child(1) {
+                    font-size: 1rem;
+                }
             }
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
