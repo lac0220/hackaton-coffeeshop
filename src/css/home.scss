@@ -7,7 +7,7 @@ $page-background-color:#e6e0d4;
     margin: auto;
     padding-bottom: 40px;
     background-color: $page-background-color;
-    h1:nth-child(1) {
+    h1 {
         padding: 30px 0 20px;
         text-transform: uppercase;
         text-align: center;
@@ -18,7 +18,12 @@ $page-background-color:#e6e0d4;
         color: $header-main-hover;
     }
 
-    h2:nth-child(3) {
+    img { 
+        max-width: 100%;
+        height: auto;
+    } 
+
+    h2 {
         padding: 15px 0 10px;
         text-align: center;
         text-decoration: underline;
@@ -29,17 +34,12 @@ $page-background-color:#e6e0d4;
         color: $header-main-hover;
     }
 
-    img { 
-        max-width: 100%;
-        height: auto;
-    } 
-
-    &-box {
+    ul {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         padding: 20px 0 30px;
-        &__details {
+        li {
             width: 25%;
             text-align: center;
             h3 {
@@ -79,8 +79,8 @@ $page-background-color:#e6e0d4;
 @media only screen and (max-width: 1515px) {
 
     .home {
-        &-box {
-            &__details {
+        ul {
+            li {
                 width: 50%;
             }
         }
@@ -94,21 +94,21 @@ $page-background-color:#e6e0d4;
 @media only screen and (max-width: 1150px) {
 
     .home {
-        h1:nth-child(1) {
+        h1 {
             font-size: 2.2rem;
         }
     
-        h2:nth-child(3) {
+        h2 {
             padding: 15px 0 5px;
             font-size: 1.6rem;
         }
 
-        &-box {
+        ul {
             flex-direction: column;
             align-items: center;
             margin: auto;
             padding: 0 0 30px;
-            &__details {
+            li {
                 margin: auto;
                 width: 100%;
                 h3 {
@@ -131,17 +131,17 @@ $page-background-color:#e6e0d4;
 @media only screen and (max-width: 850px) {
 
     .home {
-        h1:nth-child(1) {
+        h1 {
             font-size: 1.6rem; 
         }
 
-        h2:nth-child(3) {
+        h2 {
             padding: 15px 10px 5px;
             font-size: 1.4rem; 
         }
 
-        &-box {
-            &__details h3 {
+        ul {
+            li h3 {
                 font-size: 1.4rem;
             }
         }
@@ -160,24 +160,24 @@ $page-background-color:#e6e0d4;
 
     .home {
         padding-bottom: 25px;
-        h1:nth-child(1) {
+        h1 {
             padding: 20px 5px 10px;
             font-size: 1.3rem;   
-        }
-            
-        h2:nth-child(3) {
-            padding: 5px 10px 0;
-            font-size: 1.12rem; 
         }
 
         img { 
             min-height: 180px;
             object-fit: cover;
         } 
+            
+        h2 {
+            padding: 5px 10px 0;
+            font-size: 1.12rem; 
+        }
 
-        &-box {
+        ul {
             padding: 0 0 20px;
-            &__details {
+            li {
                 p {
                     font-size: 1rem;  
                 }
@@ -209,27 +209,13 @@ $page-background-color:#e6e0d4;
 @media only screen and (max-width: 330px) {
 
     .home {
-        h1:nth-child(1) {
+        h1 {
             font-size: 1.11rem;   
         }
         
-        h2:nth-child(3),
-        &-box__details h3 {
+        h2,
+        ul li h3 {
             font-size: 1rem;
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

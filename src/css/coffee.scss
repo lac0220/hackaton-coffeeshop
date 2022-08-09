@@ -20,24 +20,23 @@ $page-background-color:#e6e0d4;
 
         p {
             padding-bottom: 10px;
-        }
-
-        a {
-            font-weight: bold;
-            color: $header-main-hover;
-            &:hover {
-                color: $hover-color;
+            a {
+                font-weight: bold;
+                color: $header-main-hover;
+                &:hover {
+                    color: $hover-color;
+                }
             }
         }
     }
 
-    &-box {
+    ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         margin: auto;
         width: 65%;
-        &__item > p:nth-child(1) {
+        li > p:nth-child(1) {
             border-bottom: 2px solid $header-main-hover;
             text-transform: uppercase;
             letter-spacing: 1px; 
@@ -47,7 +46,7 @@ $page-background-color:#e6e0d4;
             color: $header-main-hover;
         }
 
-        &__item {
+       li {
             margin: 0 auto;
             padding: 20px; 
             width: 45%;
@@ -56,7 +55,7 @@ $page-background-color:#e6e0d4;
                 width: 100%;
             }
 
-            &__text {
+            div {
                 p:nth-child(1) {
                     padding: 10px 0;
                     letter-spacing: 1px; 
@@ -72,7 +71,7 @@ $page-background-color:#e6e0d4;
 @media only screen and (max-width: 1590px) {
 
     .coffee {
-        &-box__item {
+        ul li {
             padding: 15px; 
             width: 71%;
         }
@@ -92,7 +91,7 @@ $page-background-color:#e6e0d4;
             }
         } 
     
-        &-box__item {
+        ul li {
             padding: 10px; 
             width: 97%;
         }
@@ -106,9 +105,9 @@ $page-background-color:#e6e0d4;
             width: 90%;
         }
 
-        &-box {
+        ul {
             width: 100%;
-            &__item {
+            li {
                 width: 80%;
             }
         }
@@ -137,14 +136,14 @@ $page-background-color:#e6e0d4;
             }
         }
 
-        &-box {
-            &__item > p:nth-child(1) {
+        ul {
+            li > p:nth-child(1) {
                 font-size: 1.125rem;
             }
             
-            &__item {
+            li {
                 width: 96%;
-                &__text {
+                div {
                     p:nth-child(2) {
                         font-size: 1rem;
                     }
@@ -157,20 +156,19 @@ $page-background-color:#e6e0d4;
 @media only screen and (max-width: 330px) {
 
     .coffee {
-        &-box__item > p:nth-child(1) {
-            font-size: 1rem;
-        }
+        ul {
+            li > p:nth-child(1) {
+                font-size: 1rem;
+            }
 
-        &-box__item {
-            width: 96%;
-            &__text {
-                p:nth-child(1) {
-                    font-size: 1rem;
+            li {
+                width: 96%;
+                div {
+                    p:nth-child(1) {
+                        font-size: 1rem;
+                    }
                 }
             }
         }
     }
 }
-
-
-
