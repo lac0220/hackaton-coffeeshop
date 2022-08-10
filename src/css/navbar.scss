@@ -8,7 +8,7 @@ nav {
     background-color: $navbar-background-color;
     ul:nth-child(1) {
         padding-left: 280px; 
-        img {
+        li img {
             display: block;
             height: 8rem;
         }
@@ -54,7 +54,7 @@ nav {
     nav {
         ul:nth-child(1) {
             padding-left: 50px; 
-            img {
+            li img {
                 height: 6rem;
             }   
         }
@@ -70,7 +70,7 @@ nav {
     nav {
         ul:nth-child(1) {
             padding-left: 17px; 
-            img {
+            li img {
                 height: 5rem;
             }  
         }
@@ -94,7 +94,7 @@ nav {
         ul:nth-child(1) {
             padding: 0;
             background-color: $navbar-background-color;
-            img {
+            li img {
                 height: 4rem;
             }  
         }
