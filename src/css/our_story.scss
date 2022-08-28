@@ -1,10 +1,10 @@
-$header-font: 'Alfa Slab One', 'Times New Roman', Times, serif;;
+$header-font: 'Alfa Slab One', 'Times New Roman', Times, serif;
 $header-main-hover:#4a2c2a;
 $hover-color: white;
 $navbar-background-color: #d6c6b4;	
 $page-background-color:#e6e0d4;	
-$input-color:#b18f6a;
-$footer-font: 'Merriweather', 'Times New Roman', Times, serif;;	
+$input-color:#72503C;
+$footer-font: 'Merriweather', 'Times New Roman', Times, serif;
 
 .our-story {
     margin: auto;
@@ -101,7 +101,6 @@ $footer-font: 'Merriweather', 'Times New Roman', Times, serif;;
         textarea {
             width: 92%;
             height: 150px;
-            resize: none;
         }
 
         input[type=text], 
@@ -164,7 +163,9 @@ $footer-font: 'Merriweather', 'Times New Roman', Times, serif;;
             font-size: 1.25rem;
             input[type=text],
             textarea {
-                font-size: 1.25;
+                margin: 6px 12px 16px;
+                padding: 12px 16px;
+                font-size: 1.25rem;
             }
         
             input[type=submit] {
@@ -254,7 +255,7 @@ $footer-font: 'Merriweather', 'Times New Roman', Times, serif;;
         }
 
         form {
-            width: calc(100% - 45px);
+            width: calc(100% - 40px);
             font-size: 1.125rem;
             input[type=text], 
             textarea {
@@ -274,9 +275,3 @@ $footer-font: 'Merriweather', 'Times New Roman', Times, serif;;
         }
     }
 }
-
-
-
-
-
-
