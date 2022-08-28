@@ -124,7 +124,7 @@ nav ul:nth-child(2) li a:hover {
   height: auto;
 }
 .home h2 {
-  padding: 15px 0 10px;
+  padding: 25px 0 10px;
   text-align: center;
   text-decoration: underline;
   letter-spacing: 1px;
@@ -185,7 +185,7 @@ nav ul:nth-child(2) li a:hover {
     font-size: 2.2rem;
   }
   .home h2 {
-    padding: 15px 0 5px;
+    padding: 25px 0 5px;
     font-size: 1.6rem;
   }
   .home ul {
@@ -215,7 +215,7 @@ nav ul:nth-child(2) li a:hover {
     font-size: 1.6rem;
   }
   .home h2 {
-    padding: 15px 10px 5px;
+    padding: 25px 10px 5px;
     font-size: 1.4rem;
   }
   .home ul li h3 {
@@ -242,7 +242,7 @@ nav ul:nth-child(2) li a:hover {
     object-fit: cover;
   }
   .home h2 {
-    padding: 5px 10px 0;
+    padding: 10px 10px 0;
     font-size: 1.12rem;
   }
   .home ul {
@@ -288,6 +288,7 @@ nav ul:nth-child(2) li a:hover {
   padding-top: 30px;
   width: 60%;
   letter-spacing: 2px;
+  font-size: 1.875rem;
   font-weight: lighter;
   font-family: "Alfa Slab One", "Times New Roman", Times, serif;
   color: #4a2c2a;
@@ -421,6 +422,7 @@ nav ul:nth-child(2) li a:hover {
   padding-top: 30px;
   font-weight: lighter;
   letter-spacing: 2px;
+  font-size: 1.875rem;
   font-family: "Alfa Slab One", "Times New Roman", Times, serif;
   color: #4a2c2a;
 }
@@ -460,9 +462,10 @@ nav ul:nth-child(2) li a:hover {
   width: 100%;
 }
 .coffee ul li div p:nth-child(1) {
-  padding: 10px 0;
+  padding: 20px 0 10px;
   letter-spacing: 1px;
   font-weight: lighter;
+  font-style: italic;
   font-family: "Alfa Slab One", "Times New Roman", Times, serif;
   color: #4a2c2a;
 }
@@ -546,6 +549,7 @@ nav ul:nth-child(2) li a:hover {
 .our-story__head h1 {
   padding-top: 30px;
   letter-spacing: 2px;
+  font-size: 1.875rem;
   font-weight: lighter;
   font-family: "Alfa Slab One", "Times New Roman", Times, serif;
   color: #4a2c2a;
@@ -557,10 +561,11 @@ nav ul:nth-child(2) li a:hover {
   width: 100%;
 }
 .our-story h1:nth-child(3) {
-  padding: 20px 0;
+  padding: 25px 0 20px;
   text-align: center;
   text-decoration: underline;
   letter-spacing: 1px;
+  font-size: 1.875rem;
   font-family: "Alfa Slab One", "Times New Roman", Times, serif;
   font-weight: lighter;
   color: #4a2c2a;
@@ -590,23 +595,17 @@ nav ul:nth-child(2) li a:hover {
 .our-story form .input3 {
   grid-column: 1;
   grid-row: 2;
-  margin-bottom: -12px;
+  padding-top: 12px;
 }
 .our-story form .input3 input[type=text] {
   width: 15%;
-  height: 50%;
-  border-radius: 10%;
-}
-.our-story form .input3 label {
-  margin-right: 10px;
+  height: 60%;
+  border-radius: 15%;
 }
 .our-story form .input4 {
   grid-column: 2;
   grid-row: 2;
   padding-top: 8px;
-}
-.our-story form .input4 label {
-  margin-right: 10px;
 }
 .our-story form .input5 {
   grid-column: 1/span 2;
@@ -622,6 +621,7 @@ nav ul:nth-child(2) li a:hover {
   height: 150px;
 }
 .our-story form input[type=text],
+.our-story form input[type=date],
 .our-story form textarea {
   margin: 6px auto 16px;
   padding: 12px;
@@ -634,6 +634,7 @@ nav ul:nth-child(2) li a:hover {
   background-color: white;
 }
 .our-story form input[type=text]:hover,
+.our-story form input[type=date]:hover,
 .our-story form textarea:hover {
   border: 2px solid white;
 }
@@ -671,6 +672,7 @@ nav ul:nth-child(2) li a:hover {
     font-size: 1.25rem;
   }
   .our-story form input[type=text],
+.our-story form input[type=date],
 .our-story form textarea {
     margin: 6px 12px 16px;
     padding: 12px 16px;
@@ -698,6 +700,7 @@ nav ul:nth-child(2) li a:hover {
   .our-story form .input3 {
     grid-column: 1;
     grid-row: 3;
+    padding-top: 5px;
   }
   .our-story form .input3 input[type=text] {
     width: 15%;
@@ -706,7 +709,7 @@ nav ul:nth-child(2) li a:hover {
   .our-story form .input4 {
     grid-column: 1;
     grid-row: 4;
-    padding: 0 0 20px;
+    padding: 0 0 15px;
   }
   .our-story form .input5 {
     grid-column: 1;
@@ -717,8 +720,12 @@ nav ul:nth-child(2) li a:hover {
     grid-row: 6;
   }
   .our-story form input[type=text],
+.our-story form input[type=date],
 .our-story form textarea {
-    width: 90%;
+    width: 84%;
+  }
+  .our-story form input[type=date] {
+    width: 42%;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -738,7 +745,6 @@ nav ul:nth-child(2) li a:hover {
     object-fit: cover;
   }
   .our-story h1:nth-child(3) {
-    padding: 15px 0 20px;
     letter-spacing: 1px;
     font-size: 1.25rem;
   }
@@ -746,9 +752,16 @@ nav ul:nth-child(2) li a:hover {
     width: calc(100% - 40px);
     font-size: 1.125rem;
   }
+  .our-story form .input3 input[type=text] {
+    width: 18%;
+  }
   .our-story form input[type=text],
+.our-story form input[type=date],
 .our-story form textarea {
     font-size: 1.125rem;
+  }
+  .our-story form input[type=date] {
+    width: 55%;
   }
   .our-story form input[type=submit] {
     font-size: 0.938rem;
