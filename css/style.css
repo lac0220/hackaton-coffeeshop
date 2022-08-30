@@ -113,11 +113,7 @@ nav ul:nth-child(2) li a:hover {
   padding: 30px 0 20px;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 2px;
   font-size: 2.813rem;
-  font-weight: lighter;
-  font-family: "Alfa Slab One", "Times New Roman", Times, serif;
-  color: #4a2c2a;
 }
 .home img {
   max-width: 100%;
@@ -129,9 +125,6 @@ nav ul:nth-child(2) li a:hover {
   text-decoration: underline;
   letter-spacing: 1px;
   font-size: 1.875rem;
-  font-family: "Alfa Slab One", "Times New Roman", Times, serif;
-  font-weight: lighter;
-  color: #4a2c2a;
 }
 .home ul {
   display: flex;
@@ -145,10 +138,7 @@ nav ul:nth-child(2) li a:hover {
 }
 .home ul li h3 {
   letter-spacing: 1px;
-  font-weight: lighter;
   font-size: 1.8rem;
-  font-family: "Alfa Slab One", "Times New Roman", Times, serif;
-  color: #4a2c2a;
 }
 .home ul li p:nth-child(3) a {
   font-weight: bold;
@@ -280,18 +270,14 @@ nav ul:nth-child(2) li a:hover {
 }
 .menu {
   margin: auto;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   background-color: #e6e0d4;
 }
 .menu h1 {
   margin: auto;
   padding-top: 30px;
   width: 60%;
-  letter-spacing: 2px;
   font-size: 1.875rem;
-  font-weight: lighter;
-  font-family: "Alfa Slab One", "Times New Roman", Times, serif;
-  color: #4a2c2a;
 }
 .menu-box {
   display: flex;
@@ -309,9 +295,6 @@ nav ul:nth-child(2) li a:hover {
   padding: 20px 0 5px;
   letter-spacing: 2px;
   font-size: 1.4625rem;
-  font-weight: lighter;
-  font-family: "Alfa Slab One", "Times New Roman", Times, serif;
-  color: #4a2c2a;
 }
 .menu-box ul li div:nth-child(2) {
   margin-left: 150px;
@@ -411,37 +394,32 @@ nav ul:nth-child(2) li a:hover {
 }
 .coffee {
   margin: auto;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   background-color: #e6e0d4;
 }
-.coffee-head {
+.coffee-head, .our-story__head {
   margin: auto;
   width: 60%;
 }
-.coffee-head h1 {
+.coffee-head h1, .our-story__head h1 {
   padding-top: 30px;
-  font-weight: lighter;
-  letter-spacing: 2px;
   font-size: 1.875rem;
-  font-family: "Alfa Slab One", "Times New Roman", Times, serif;
-  color: #4a2c2a;
 }
-.coffee-head p {
+.coffee-head p, .our-story__head p {
   padding-bottom: 10px;
 }
-.coffee-head p a {
+.coffee-head p a, .our-story__head p a {
   font-weight: bold;
   color: #4a2c2a;
 }
-.coffee-head p a:hover {
+.coffee-head p a:hover, .our-story__head p a:hover {
   color: white;
 }
 .coffee ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   margin: auto;
-  width: 65%;
+  width: 63%;
 }
 .coffee ul li > p:nth-child(1) {
   border-bottom: 2px solid #4a2c2a;
@@ -454,15 +432,15 @@ nav ul:nth-child(2) li a:hover {
 }
 .coffee ul li {
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 0;
   width: 45%;
 }
 .coffee ul li img {
-  margin: auto 0;
+  margin: auto;
   width: 100%;
 }
 .coffee ul li div p:nth-child(1) {
-  padding: 20px 0 10px;
+  padding: 15px 0 10px;
   letter-spacing: 1px;
   font-weight: lighter;
   font-style: italic;
@@ -470,70 +448,89 @@ nav ul:nth-child(2) li a:hover {
   color: #4a2c2a;
 }
 
-@media only screen and (max-width: 1590px) {
+@media only screen and (max-width: 1500px) {
+  .coffee ul {
+    width: 70%;
+  }
   .coffee ul li {
-    padding: 15px;
-    width: 71%;
+    padding: 15px 0;
+    width: 51%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .coffee ul {
+    width: 80%;
+  }
+  .coffee ul li {
+    width: 53%;
   }
 }
 @media only screen and (max-width: 1000px) {
-  .coffee-head h1 {
+  .coffee {
+    padding-bottom: 20px;
+  }
+  .coffee-head h1, .our-story__head h1 {
     font-size: 1.563rem;
   }
-  .coffee-head p {
+  .coffee-head p, .our-story__head p {
     padding-bottom: 5px;
   }
-  .coffee ul li {
-    padding: 10px;
-    width: 97%;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .coffee-head {
+  .coffee ul {
     width: 90%;
   }
+  .coffee ul li {
+    padding: 10px 0;
+    width: 58%;
+  }
+}
+@media only screen and (max-width: 805px) {
   .coffee ul {
     width: 100%;
   }
   .coffee ul li {
-    width: 80%;
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .coffee-head, .our-story__head {
+    width: 90%;
+  }
+  .coffee ul li {
+    width: 70%;
   }
 }
 @media only screen and (max-width: 500px) {
   .coffee {
     padding-bottom: 10px;
   }
-  .coffee-head a:hover {
-    color: #4a2c2a;
-  }
-  .coffee-head a:hover:active {
-    color: white;
-  }
-  .coffee-head h1 {
+  .coffee-head h1, .our-story__head h1 {
     padding-top: 20px;
     font-size: 1.25rem;
   }
-  .coffee-head p {
+  .coffee-head p, .our-story__head p {
     font-size: 1rem;
+  }
+  .coffee-head p a:hover, .our-story__head p a:hover {
+    color: #4a2c2a;
+  }
+  .coffee-head p a:hover:active, .our-story__head p a:hover:active {
+    color: white;
+  }
+  .coffee ul {
+    width: 96%;
   }
   .coffee ul li > p:nth-child(1) {
     font-size: 1.125rem;
   }
   .coffee ul li {
-    width: 96%;
+    width: 94%;
   }
-  .coffee ul li div p:nth-child(2) {
+  .coffee ul li div p {
     font-size: 1rem;
   }
 }
 @media only screen and (max-width: 330px) {
   .coffee ul li > p:nth-child(1) {
-    font-size: 1rem;
-  }
-  .coffee ul li {
-    width: 96%;
-  }
-  .coffee ul li div p:nth-child(1) {
     font-size: 1rem;
   }
 }
@@ -542,33 +539,18 @@ nav ul:nth-child(2) li a:hover {
   padding-bottom: 40px;
   background-color: #e6e0d4;
 }
-.our-story__head {
-  margin: auto;
-  width: 60%;
-}
-.our-story__head h1 {
-  padding-top: 30px;
-  letter-spacing: 2px;
-  font-size: 1.875rem;
-  font-weight: lighter;
-  font-family: "Alfa Slab One", "Times New Roman", Times, serif;
-  color: #4a2c2a;
-}
 .our-story__head p {
   padding-bottom: 30px;
 }
 .our-story img {
   width: 100%;
 }
-.our-story h1:nth-child(3) {
+.our-story h2:nth-child(3) {
   padding: 25px 0 20px;
   text-align: center;
   text-decoration: underline;
   letter-spacing: 1px;
   font-size: 1.875rem;
-  font-family: "Alfa Slab One", "Times New Roman", Times, serif;
-  font-weight: lighter;
-  color: #4a2c2a;
 }
 .our-story form {
   display: grid;
@@ -598,7 +580,7 @@ nav ul:nth-child(2) li a:hover {
   padding-top: 12px;
 }
 .our-story form .input3 input[type=text] {
-  width: 15%;
+  width: 18%;
   height: 60%;
   border-radius: 15%;
 }
@@ -658,13 +640,10 @@ nav ul:nth-child(2) li a:hover {
 }
 
 @media only screen and (max-width: 1000px) {
-  .our-story__head h1 {
-    font-size: 1.563rem;
-  }
   .our-story__head p {
     padding-bottom: 20px;
   }
-  .our-story h1:nth-child(3) {
+  .our-story h2:nth-child(3) {
     font-size: 1.563rem;
   }
   .our-story form {
@@ -683,9 +662,6 @@ nav ul:nth-child(2) li a:hover {
   }
 }
 @media only screen and (max-width: 700px) {
-  .our-story__head {
-    width: 90%;
-  }
   .our-story img {
     height: 180px;
   }
@@ -703,13 +679,12 @@ nav ul:nth-child(2) li a:hover {
     padding-top: 5px;
   }
   .our-story form .input3 input[type=text] {
-    width: 15%;
-    border-radius: 10%;
+    width: 14%;
   }
   .our-story form .input4 {
     grid-column: 1;
     grid-row: 4;
-    padding: 0 0 15px;
+    padding: 5px 0 10px;
   }
   .our-story form .input5 {
     grid-column: 1;
@@ -732,19 +707,14 @@ nav ul:nth-child(2) li a:hover {
   .our-story {
     padding-bottom: 25px;
   }
-  .our-story__head h1 {
-    padding-top: 20px;
-    font-size: 1.25rem;
-  }
   .our-story__head p {
     padding-bottom: 20px;
-    font-size: 1rem;
   }
   .our-story img {
     min-height: 180px;
     object-fit: cover;
   }
-  .our-story h1:nth-child(3) {
+  .our-story h2:nth-child(3) {
     letter-spacing: 1px;
     font-size: 1.25rem;
   }
@@ -753,7 +723,7 @@ nav ul:nth-child(2) li a:hover {
     font-size: 1.125rem;
   }
   .our-story form .input3 input[type=text] {
-    width: 18%;
+    width: 19%;
   }
   .our-story form input[type=text],
 .our-story form input[type=date],
@@ -895,6 +865,18 @@ body {
   height: 100vh;
   line-height: 1.5;
   font-family: "Open Sans", "Times New Roman", Times, serif;
+}
+
+h1 {
+  letter-spacing: 2px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: lighter;
+  font-family: "Alfa Slab One", "Times New Roman", Times, serif;
+  color: #4a2c2a;
 }
 
 li {
