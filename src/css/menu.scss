@@ -1,20 +1,14 @@
-$header-font: 'Alfa Slab One', 'Times New Roman', Times, serif;	
-$header-main-hover:#4a2c2a;
 $page-background-color:#e6e0d4;	
 
 .menu {
     margin: auto;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     background-color: $page-background-color;
     h1 {
         margin: auto;
         padding-top: 30px;
         width: 60%;
-        letter-spacing: 2px; 
         font-size: 1.875rem;
-        font-weight: lighter;
-        font-family: $header-font;
-        color: $header-main-hover;
     }
 
     &-box {
@@ -31,9 +25,6 @@ $page-background-color:#e6e0d4;
                 padding: 20px 0 5px;
                 letter-spacing: 2px; 
                 font-size: 1.4625rem;
-                font-weight: lighter;
-                font-family: $header-font;
-                color: $header-main-hover;
             }
 
             div:nth-child(2) {
@@ -53,19 +44,15 @@ $page-background-color:#e6e0d4;
 
 @media only screen and (max-width: 1580px) {
 
-    .menu {
-        h1 {
-            width: 80%; 
-        }
+    .menu h1 {
+        width: 80%; 
     }
 }
 
 @media only screen and (max-width: 1190px) {
 
-    .menu {
-        h1 {
-            width: 95%; 
-        }
+    .menu h1 {
+        width: 95%; 
     }
 }
 

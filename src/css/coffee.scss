@@ -5,18 +5,14 @@ $page-background-color:#e6e0d4;
 
 .coffee {
     margin: auto;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     background-color: $page-background-color;
     &-head {
         margin: auto;
         width: 60%;
         h1 {
             padding-top: 30px;
-            font-weight: lighter;
-            letter-spacing: 2px; 
             font-size: 1.875rem;
-            font-family: $header-font;
-            color: $header-main-hover;
         }
 
         p {
@@ -34,9 +30,8 @@ $page-background-color:#e6e0d4;
     ul {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
         margin: auto;
-        width: 65%;
+        width: 63%;
         li > p:nth-child(1) {
             border-bottom: 2px solid $header-main-hover;
             text-transform: uppercase;
@@ -49,40 +44,52 @@ $page-background-color:#e6e0d4;
 
        li {
             margin: 0 auto;
-            padding: 20px; 
+            padding: 20px 0; 
             width: 45%;
             img {
-                margin: auto 0;
+                margin: auto;
                 width: 100%;
             }
 
-            div {
-                p:nth-child(1) {
-                    padding: 20px 0 10px;
-                    letter-spacing: 1px; 
-                    font-weight: lighter;
-                    font-style: italic;
-                    font-family: $header-font;
-                    color: $header-main-hover;
-                }
+            div p:nth-child(1) {
+                padding: 15px 0 10px;
+                letter-spacing: 1px; 
+                font-weight: lighter;
+                font-style: italic;
+                font-family: $header-font;
+                color: $header-main-hover;
             }
         }
     }
 }
 
-@media only screen and (max-width: 1590px) {
 
-    .coffee {
-        ul li {
-            padding: 15px; 
-            width: 71%;
+@media only screen and (max-width: 1500px) {
+
+    .coffee ul {
+        width: 70%;
+        li {
+            padding: 15px 0; 
+            width: 51%;
         }
     }
 }
+
+@media only screen and (max-width: 1200px) {
+
+    .coffee ul {
+        width: 80%;
+        li {
+            width: 53%;
+        }
+    }
+}
+
 
 @media only screen and (max-width: 1000px) {
     
     .coffee {
+        padding-bottom: 20px;
         &-head {
             h1 {
                 font-size: 1.563rem;
@@ -93,11 +100,24 @@ $page-background-color:#e6e0d4;
             }
         } 
     
-        ul li {
-            padding: 10px; 
-            width: 97%;
+        ul {            
+            width: 90%;
+            li {
+                padding: 10px 0; 
+                width: 58%;
+            }    
+        } 
+    }
+}
+
+@media only screen and (max-width: 805px) {
+
+    .coffee ul { 
+        width: 100%;
+        li {
+            width: 60%;
         }
-    } 
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -107,11 +127,8 @@ $page-background-color:#e6e0d4;
             width: 90%;
         }
 
-        ul {
-            width: 100%;
-            li {
-                width: 80%;
-            }
+        ul li {
+            width: 70%;
         }
     }
 }
@@ -121,13 +138,6 @@ $page-background-color:#e6e0d4;
     .coffee {
         padding-bottom: 10px;
         &-head {
-            a:hover {
-                color:$header-main-hover;
-                &:active {
-                    color:$hover-color;
-                }
-            }
-            
             h1 {
                 padding-top: 20px;
                 font-size: 1.25rem;
@@ -135,20 +145,25 @@ $page-background-color:#e6e0d4;
 
             p {
                 font-size: 1rem;
+                a:hover {
+                    color:$header-main-hover;
+                    &:active {
+                        color:$hover-color;
+                    }
+                }
             }
         }
 
-        ul {
+        ul { 
+            width: 96%;
             li > p:nth-child(1) {
                 font-size: 1.125rem;
             }
             
             li {
-                width: 96%;
-                div {
-                    p:nth-child(2) {
-                        font-size: 1rem;
-                    }
+                width: 94%;
+                div p {
+                    font-size: 1rem;
                 }
             }
         }
@@ -157,20 +172,7 @@ $page-background-color:#e6e0d4;
 
 @media only screen and (max-width: 330px) {
 
-    .coffee {
-        ul {
-            li > p:nth-child(1) {
-                font-size: 1rem;
-            }
-
-            li {
-                width: 96%;
-                div {
-                    p:nth-child(1) {
-                        font-size: 1rem;
-                    }
-                }
-            }
-        }
+    .coffee ul li > p:nth-child(1) {
+        font-size: 1rem;    
     }
 }
