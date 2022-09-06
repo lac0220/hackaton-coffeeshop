@@ -377,10 +377,10 @@ nav ul:nth-child(2) li a:hover {
   }
 }
 @media only screen and (max-width: 405px) {
-  .menu-box ul li h2 {
+  .menu ul li h2 {
     font-size: 1.05rem;
   }
-  .menu-box .add h2 {
+  .menu .add h2 {
     font-size: 1.1rem;
   }
 }
@@ -887,15 +887,70 @@ a {
   text-decoration: none;
 }
 
+.loader-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+.loader-animation-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.loader-animation::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border: 15px solid #4a2c2a;
+  border-top: 15px solid white;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+  -webkit-animation: loading 0.75s ease infinite;
+}
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+@-webkit-keyframes loading {
+  from {
+    -webkit-transform: rotate(0turn);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+  }
+}
+
 @media screen and (max-width: 1000px) {
   section p {
     font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .loader-animation::after {
+    width: 60px;
+    height: 60px;
   }
 }
 @media screen and (max-width: 500px) {
   html,
 body {
     margin-top: 32px;
+  }
+  html .loader-animation::after,
+body .loader-animation::after {
+    width: 30px;
+    height: 30px;
+    border: 10px solid #4a2c2a;
+    border-top: 10px solid white;
   }
 }
 /*# sourceMappingURL=style.css.map */
