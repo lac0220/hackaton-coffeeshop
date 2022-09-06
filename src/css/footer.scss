@@ -60,12 +60,10 @@ footer {
             margin: auto 40px;
         }
 
-        ul:nth-child(2) li {
-            p:nth-child(3) {
-                position: static;
-                margin: 10px 0 0 0;
-                text-align: center;
-            }
+        ul:nth-child(2) li p:nth-child(3) {
+            position: static;
+            margin: 10px 0 0 0;
+            text-align: center;
         }
     }
 }
@@ -123,18 +121,15 @@ footer {
             }
         }
 
-        ul:nth-child(2) li {
-            p:nth-child(2) a {
-                &:hover {
-                    color: #C8F000;
-                }
-                
-                &:active {
-                    color: $footer-hover;
-                }
+        ul:nth-child(2) li p:nth-child(2) a {
+            &:hover {
+                color: #C8F000;
+            }
+            
+            &:active {
+                color: $footer-hover;
             }
         }
     }
 }
-
  
