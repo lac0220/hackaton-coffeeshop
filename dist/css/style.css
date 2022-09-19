@@ -161,6 +161,14 @@ nav ul:nth-child(2) li a:hover {
   border: none;
   border-radius: 10px;
 }
+.home::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url(/img/counter.webp);
+}
 
 @media only screen and (max-width: 1515px) {
   .home ul li {
@@ -233,7 +241,7 @@ nav ul:nth-child(2) li a:hover {
   }
   .home h2 {
     padding: 10px 10px 0;
-    font-size: 1.12rem;
+    font-size: 1.125rem;
   }
   .home ul {
     padding: 0 0 20px;
@@ -243,7 +251,7 @@ nav ul:nth-child(2) li a:hover {
   }
   .home ul li h3 {
     padding: 10px 0 0;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
   }
   .home ul li p:nth-child(3) a:hover {
     color: #4a2c2a;
@@ -257,15 +265,6 @@ nav ul:nth-child(2) li a:hover {
   .home-maps iframe {
     left: 5%;
     width: 90%;
-  }
-}
-@media only screen and (max-width: 330px) {
-  .home h1 {
-    font-size: 1.11rem;
-  }
-  .home h2,
-.home ul li h3 {
-    font-size: 1rem;
   }
 }
 .menu {
@@ -376,22 +375,6 @@ nav ul:nth-child(2) li a:hover {
     font-size: 1.2rem;
   }
 }
-@media only screen and (max-width: 405px) {
-  .menu ul li h2 {
-    font-size: 1.05rem;
-  }
-  .menu .add h2 {
-    font-size: 1.1rem;
-  }
-}
-@media only screen and (max-width: 330px) {
-  .menu ul li h2 {
-    font-size: 0.95rem;
-  }
-  .menu .add h2 {
-    font-size: 0.99rem;
-  }
-}
 .coffee {
   margin: auto;
   padding-bottom: 15px;
@@ -421,7 +404,7 @@ nav ul:nth-child(2) li a:hover {
   margin: auto;
   width: 63%;
 }
-.coffee ul li > p:nth-child(1) {
+.coffee ul h2 {
   border-bottom: 2px solid #4a2c2a;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -519,18 +502,13 @@ nav ul:nth-child(2) li a:hover {
   .coffee ul {
     width: 96%;
   }
-  .coffee ul li > p:nth-child(1) {
+  .coffee ul h2 {
     font-size: 1.125rem;
   }
   .coffee ul li {
     width: 94%;
   }
   .coffee ul li div p {
-    font-size: 1rem;
-  }
-}
-@media only screen and (max-width: 330px) {
-  .coffee ul li > p:nth-child(1) {
     font-size: 1rem;
   }
 }
@@ -822,7 +800,11 @@ footer ul:nth-child(1) .footer-home {
 footer ul:nth-child(2) li p:nth-child(2) {
     font-size: 1rem;
   }
+  footer ul:nth-child(2) li p:nth-child(1) {
+    padding: 5px 0;
+  }
   footer ul:nth-child(2) li p:nth-child(3) {
+    margin-top: 5px;
     font-size: 0.875rem;
   }
 }
@@ -869,6 +851,7 @@ body {
 
 h1 {
   letter-spacing: 2px;
+  text-shadow: 1px 1px black, 1px 1px black;
 }
 
 h1,

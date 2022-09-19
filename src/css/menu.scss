@@ -130,30 +130,3 @@ $page-background-color:#e6e0d4;
         }
     }
 }
-
-@media only screen and (max-width: 405px) {
-
-    .menu {
-        ul li h2 {
-            font-size: 1.05rem;
-        }  
-                
-        .add h2 {
-            font-size: 1.1rem;
-        }
-    }
-}
-
-
-@media only screen and (max-width: 330px) {
-
-    .menu {           
-        ul li h2 {
-            font-size: 0.95rem;
-        }
-
-        .add h2 {
-            font-size: 0.99rem;
-        }
-    }
-}
