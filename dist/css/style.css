@@ -167,7 +167,7 @@ nav ul:nth-child(2) li a:hover {
   height: 0;
   overflow: hidden;
   z-index: -1;
-  content: url(/img/counter.webp);
+  content: url(../img/counter.webp);
 }
 
 @media only screen and (max-width: 1515px) {

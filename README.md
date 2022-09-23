@@ -1,6 +1,6 @@
 # Generic Hipster Coffee - Hackathon project
 
-The challenge was about to design a responsive coffee shop website that contains some basic information, a menu, types of listed coffees, and a reservation form
+The challenge was about to design a static responsive coffee shop website that contains some basic information, a menu, types of listed coffees, and a reservation form
 
 1. index.html
 
@@ -9,16 +9,28 @@ The challenge was about to design a responsive coffee shop website that contains
 3. coffee.html
 
 4. our-story.html
-## Tech Stack
 
-Used [Gulp.js](https://gulpjs.com) for implementation
+## Tech Stack
 
 - HTML5
 - SCSS
 - Webpack
+
+### To run this project locally:
+
+Used [Gulp.js](https://gulpjs.com) for implementation
+
+```
+cd ../lorem
+$ npm install
+$ gulp watch
+```
+
+Please note that first, you need to install the Gulp CLI (command line utility) globally on your computer
 ## Version
 
 *1.0 - 16/04/2022* - Publishing of the website
+
 ## Author
 
 <b>Laszlo Nemeth</b>
