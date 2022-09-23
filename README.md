@@ -16,9 +16,11 @@ The challenge was about to design a static responsive coffee shop website that c
 - SCSS
 - Webpack
 
-### To run this project locally:
+## Setup
 
 Used [Gulp.js](https://gulpjs.com) for implementation
+
+### To run this project locally:
 
 ```
 cd ../lorem
@@ -27,6 +29,7 @@ $ gulp watch
 ```
 
 Please note that first, you need to install the Gulp CLI (command line utility) globally on your computer
+
 ## Version
 
 *1.0 - 16/04/2022* - Publishing of the website
