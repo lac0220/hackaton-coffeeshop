@@ -1,16 +1,14 @@
+@import 'variables';
 @import 'navbar';
 @import 'home';
 @import 'menu';
 @import 'coffee';
 @import 'our_story';
 @import 'footer';
+@import 'loader_animation';
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Alfa Slab One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open Sans&display=swap');
-
-$main-font: 'Open Sans', 'Times New Roman', Times, serif;
-$header-font: 'Alfa Slab One', 'Times New Roman', Times, serif;
-$header-main-hover:#4a2c2a;
 
 * {
     margin: 0;
@@ -54,66 +52,10 @@ a {
     text-decoration: none;
 }
 
-//loader-animation style
-.loader-animation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    transition: opacity 0.75s, visibility 0.75s;
-    &-hidden {
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    &::after {
-        content: "";
-        width: 100px;
-        height: 100px;
-        border: 15px solid $header-main-hover;
-        border-top: 15px solid white;
-        border-radius: 50%;
-        animation: loading 0.75s ease infinite;
-        -webkit-animation: loading 0.75s ease infinite;
-    }
-
-    @keyframes loading {
-        from {
-            transform: rotate(0turn);
-        }
-        
-        to {
-            transform: rotate(1turn);
-        }
-    }
-
-    @-webkit-keyframes loading {
-        from {
-            -webkit-transform: rotate(0turn);
-        }
-        
-        to {
-            -webkit-transform: rotate(1turn);
-        }
-    }
-}
-
 @media screen and (max-width: 1000px) {
     
     section p {
         font-size: 1.125rem;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    
-    .loader-animation::after {
-        width: 60px;
-        height: 60px;
     }
 }
 
@@ -122,11 +64,5 @@ a {
     html, 
     body {
         margin-top: 32px;
-        .loader-animation::after {
-            width: 30px;
-            height: 30px;
-            border: 10px solid $header-main-hover;
-            border-top: 10px solid white;
-        }
     }
 }

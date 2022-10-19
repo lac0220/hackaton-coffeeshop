@@ -14,7 +14,6 @@ The challenge was about to design a static responsive coffee shop website that c
 
 - HTML5
 - SCSS
-- Webpack
 
 ## Setup
 
