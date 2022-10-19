@@ -161,14 +161,6 @@ nav ul:nth-child(2) li a:hover {
   border: none;
   border-radius: 10px;
 }
-.home::after {
-  position: absolute;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  z-index: -1;
-  content: url(../img/counter.webp);
-}
 
 @media only screen and (max-width: 1515px) {
   .home ul li {
@@ -828,48 +820,6 @@ footer ul:nth-child(1) .footer-home:active {
     color: #d6c6b4;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 100%;
-}
-
-body {
-  font-size: 1.25rem;
-}
-
-html,
-body {
-  height: 100vh;
-  line-height: 1.5;
-  font-family: "Open Sans", "Times New Roman", Times, serif;
-}
-
-h1 {
-  letter-spacing: 2px;
-  text-shadow: 1px 1px black, 1px 1px black;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: lighter;
-  font-family: "Alfa Slab One", "Times New Roman", Times, serif;
-  color: #4a2c2a;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 .loader-animation {
   display: flex;
   justify-content: center;
@@ -912,11 +862,6 @@ a {
   }
 }
 
-@media screen and (max-width: 1000px) {
-  section p {
-    font-size: 1.125rem;
-  }
-}
 @media screen and (max-width: 800px) {
   .loader-animation::after {
     width: 60px;
@@ -924,16 +869,64 @@ a {
   }
 }
 @media screen and (max-width: 500px) {
-  html,
-body {
-    margin-top: 32px;
-  }
-  html .loader-animation::after,
-body .loader-animation::after {
+  .loader-animation::after {
     width: 30px;
     height: 30px;
     border: 10px solid #4a2c2a;
     border-top: 10px solid white;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1.25rem;
+}
+
+html,
+body {
+  height: 100vh;
+  line-height: 1.5;
+  font-family: "Open Sans", "Times New Roman", Times, serif;
+}
+
+h1 {
+  letter-spacing: 2px;
+  text-shadow: 1px 1px black, 1px 1px black;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: lighter;
+  font-family: "Alfa Slab One", "Times New Roman", Times, serif;
+  color: #4a2c2a;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  section p {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  html,
+body {
+    margin-top: 32px;
   }
 }
 /*# sourceMappingURL=style.css.map */
