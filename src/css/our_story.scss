@@ -80,8 +80,8 @@
         input[type=text], 
         input[type=date], 
         textarea {
-            margin: 6px auto 16px;
-            padding: 12px;
+            margin: 6px 12px 16px;
+            padding: 12px 16px;
             outline:none;
             resize: vertical;
             border: 2px solid $input-color;
@@ -133,8 +133,6 @@
             input[type=text],
             input[type=date],
             textarea {
-                margin: 6px 12px 16px;
-                padding: 12px 16px;
                 font-size: 1.25rem;
             }
         
@@ -188,7 +186,7 @@
             input[type=text], 
             input[type=date],
             textarea {
-                width: 84%;   
+                width: 85%;   
             }
 
             input[type=date] {

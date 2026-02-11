@@ -575,8 +575,8 @@ nav ul:nth-child(2) li a:hover {
 .our-story form input[type=text],
 .our-story form input[type=date],
 .our-story form textarea {
-  margin: 6px auto 16px;
-  padding: 12px;
+  margin: 6px 12px 16px;
+  padding: 12px 16px;
   outline: none;
   resize: vertical;
   border: 2px solid #72503C;
@@ -599,11 +599,11 @@ nav ul:nth-child(2) li a:hover {
   font-weight: bold;
   font-size: 1.25rem;
   font-family: "Merriweather", "Times New Roman", Times, serif;
-  background-color: #4a2c2a;
+  background-color: #d6c6b4;
   color: white;
 }
 .our-story form input[type=submit]:hover {
-  background-color: #d6c6b4;
+  background-color: #4a2c2a;
 }
 .our-story form input[type=text]:required:focus:invalid {
   border: 2px solid red;
@@ -623,8 +623,6 @@ nav ul:nth-child(2) li a:hover {
   .our-story form input[type=text],
 .our-story form input[type=date],
 .our-story form textarea {
-    margin: 6px 12px 16px;
-    padding: 12px 16px;
     font-size: 1.25rem;
   }
   .our-story form input[type=submit] {
@@ -667,7 +665,7 @@ nav ul:nth-child(2) li a:hover {
   .our-story form input[type=text],
 .our-story form input[type=date],
 .our-story form textarea {
-    width: 84%;
+    width: 85%;
   }
   .our-story form input[type=date] {
     width: 42%;
@@ -756,6 +754,7 @@ footer ul:nth-child(2) li p:nth-child(2) a:hover {
   color: #d6c6b4;
 }
 footer ul:nth-child(2) li p:nth-child(3) {
+  float: right;
   margin: -28px 30px 0;
   font-size: 1.125rem;
 }
@@ -765,8 +764,8 @@ footer ul:nth-child(2) li p:nth-child(3) {
     margin: auto 40px;
   }
   footer ul:nth-child(2) li p:nth-child(3) {
-    position: static;
-    margin: 10px 0 0 0;
+    float: none;
+    margin-top: 20px;
     text-align: center;
   }
 }
@@ -796,7 +795,6 @@ footer ul:nth-child(2) li p:nth-child(2) {
     padding: 5px 0;
   }
   footer ul:nth-child(2) li p:nth-child(3) {
-    margin-top: 5px;
     font-size: 0.875rem;
   }
 }
