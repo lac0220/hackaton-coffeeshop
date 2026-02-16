@@ -1,37 +1,61 @@
 # Generic Hipster Coffee - Hackathon project
 
-The challenge was about to design a static responsive coffee shop website that contains some basic information, a menu, types of listed coffees, and a reservation form
+A fully responsive static coffee shop website built during a hackathon challenge. The goal was to design and implement a clean, modern multi-page website for a fictional coffee shop using semantic HTML and structured SCSS.
 
-1. index.html
+## Features
 
-2. menu.html
+- Responsive multi-page layout
 
-3. coffee.html
+- Clean and modern coffee shop design
 
-4. our-story.html
+- Structured menu page with listed offerings
+
+- Coffee selection page presenting different coffee types
+
+- “Our Story” page with a reservation contact form
+
+- Mobile-friendly user experience
+
+## Project Structure
+
+- index.html – Home page
+
+- menu.html – Menu page
+
+- coffee.html – Coffee selection page
+
+- our-story.html – About page with reservation form
 
 ## Tech Stack
 
 - HTML5
+
 - SCSS
+
+- Gulp.js (task runner for compiling SCSS and development workflow)
 
 ## Setup
 
-Used [Gulp.js](https://gulpjs.com) for implementation
+### Prerequisites
 
-### To run this project locally:
+Make sure you have installed Node.js and Gulp CLI globally:
 
 ```
-cd ../lorem
+$ npm install -g gulp-cli
+```
+
+### Run locally
+
+```
+git clone <your-repository-url>
+cd legendary-quotes
 $ npm install
 $ gulp watch
 ```
 
-Please note that first, you need to install the Gulp CLI (command line utility) globally on your computer
-
 ## Version
 
-*1.0 - 16/04/2022* - Publishing of the website
+*1.0 - 16/04/2022* - Initial release
 
 ## Author
 
@@ -45,4 +69,3 @@ Please note that first, you need to install the Gulp CLI (command line utility) 
         <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
     </a>
 </div>
-
